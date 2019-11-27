@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov 27 01:53:54 2019
+# Process ID: 30560
+# Current directory: C:/Users/22270/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/Racing Game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30424 C:\Users\22270\Documents\GitHub\Verilog_game\FPGA-Racing-Game-master\Racing Game\Racing Game.xpr
+# Log file: C:/Users/22270/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/Racing Game/vivado.log
+# Journal file: C:/Users/22270/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/Racing Game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/22270/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/Racing Game/Racing Game.xpr}
