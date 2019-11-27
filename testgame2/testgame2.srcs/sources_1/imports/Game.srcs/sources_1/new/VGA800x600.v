@@ -14,21 +14,21 @@ module vga800x600(
     );
 
     // VGA timings https://timetoexplore.net/blog/video-timings-vga-720p-1080p
-    localparam HS_STA = 40;              // horizontal sync start
-    localparam HS_END = 40 + 128;        // horizontal sync end
-    localparam HA_STA = 40 + 128 + 88;   // horizontal active pixel start
-    localparam VS_STA = 600 + 1;         // vertical sync start
-    localparam VS_END = 600 + 1 + 4;     // vertical sync end
-    localparam VA_END = 600;             // vertical active pixel end
-    localparam LINE   = 1056;            // complete line (pixels)
-    localparam SCREEN = 628;             // complete screen (lines)
+    localparam HS_STA = 0;              // horizontal sync start
+    localparam HS_END = 151;        // horizontal sync end
+    localparam HA_STA = 384;   // horizontal active pixel start 40 + 128 + 88
+    localparam VS_STA = 0;         // vertical sync start
+    localparam VS_END = 3;     // vertical sync end
+    localparam VA_END = 931;             // vertical active pixel end 600
+    localparam LINE   = 1823;            // complete line (pixels) 1056
+    localparam SCREEN = 930;             // complete screen (lines) 628
 
     reg [10:0] h_count; // line position
     reg  [9:0] v_count; // screen position
 
     // generate sync signals (active high for 800x600)
-    assign o_hs = ((h_count >= HS_STA) & (h_count < HS_END));
-    assign o_vs = ((v_count >= VS_STA) & (v_count < VS_END));
+    assign o_hs = (h_count > 11'd151 )? 1'd1 :1'd0; //((h_count >= HS_STA) & (h_count < HS_END));
+    assign o_vs = ( v_count < 10'd3) ? 1'd1 :1'd0; //((v_count >= VS_STA) & (v_count < VS_END));
 
     // keep x and y bound within the active pixels
     assign o_x = (h_count < HA_STA) ? 0 : (h_count - HA_STA);

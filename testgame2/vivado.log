@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 26 22:27:53 2019
+# Process ID: 150652
+# Current directory: C:/Users/22270/Documents/GitHub/Verilog_game/testgame2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent150956 C:\Users\22270\Documents\GitHub\Verilog_game\testgame2\testgame2.xpr
+# Log file: C:/Users/22270/Documents/GitHub/Verilog_game/testgame2/vivado.log
+# Journal file: C:/Users/22270/Documents/GitHub/Verilog_game/testgame2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/22270/Documents/GitHub/Verilog_game/testgame2/testgame2.xpr
+INFO: [Project 1-313] Project file moved from 'H:/Desktop/Verilog/testgame2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/22270/Documents/GitHub/Verilog_game/testgame2/testgame2.ip_user_files', nor could it be found using path 'H:/Desktop/Verilog/testgame2/testgame2.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'AccelerometerCtl2_2' is locked:
+* IP definition 'AccelerometerCtl2 (4.0)' for IP 'AccelerometerCtl2_2' (customized with software release 2016.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'AccelerometerCtl2_0' is locked:
+* IP definition 'AccelerometerCtl2 (3.0)' for IP 'AccelerometerCtl2_0' (customized with software release 2016.2) was not found in the IP Catalog.
+* IP 'AccelerometerCtl2_0' contains one or more locked subcores.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 654.031 ; gain = 86.273
+update_compile_order -fileset sources_1

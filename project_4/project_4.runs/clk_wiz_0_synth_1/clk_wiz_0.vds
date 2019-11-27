@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 21 13:28:57 2019
+# Process ID: 10540
+# Current directory: H:/Desktop/Verilog/project_4/project_4.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: H:/Desktop/Verilog/project_4/project_4.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: H:/Desktop/Verilog/project_4/project_4.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = 270e509ee059d0ea.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 13:29:02 2019...

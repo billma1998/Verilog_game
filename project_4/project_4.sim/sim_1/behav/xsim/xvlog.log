@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Desktop/project_4/project_4.srcs/sources_1/new/vga_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_out
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'vcount' is not allowed [H:/Desktop/project_4/project_4.srcs/sources_1/new/vga_out.v:38]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'testvalue' is not allowed [H:/Desktop/project_4/project_4.srcs/sources_1/new/vga_out.v:39]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'hcount' is not allowed [H:/Desktop/project_4/project_4.srcs/sources_1/new/vga_out.v:40]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pix_b' is not allowed [H:/Desktop/project_4/project_4.srcs/sources_1/new/vga_out.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Desktop/project_4/project_4.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
