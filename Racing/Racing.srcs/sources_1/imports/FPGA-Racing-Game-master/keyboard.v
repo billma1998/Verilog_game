@@ -24,7 +24,7 @@
 module keyboard(
 input wire clk, reset,
 input wire ps2d, ps2c,
-output wire left, right, enter,
+output wire enter,
 output reg key_relese
 );
 //declare veriables
@@ -52,8 +52,8 @@ begin
     
 end
 //output control keys of interest
-assign left = (key==8'h1c) & !key_relese; // 1c is the code for 'A'
-assign right = (key==8'h1b) & !key_relese; // 1b is the code for 'B'
+//assign left = (key==8'h1c) & !key_relese; // 1c is the code for 'A'
+//assign right = (key==8'h1b) & !key_relese; // 1b is the code for 'B'
 assign enter = (key==8'h5a) & !key_relese; // 5a is the code for 'Enter'
 
 

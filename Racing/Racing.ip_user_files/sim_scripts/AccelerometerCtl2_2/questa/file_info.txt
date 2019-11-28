@@ -1,0 +1,5 @@
+SPI_if.vhd,vhdl,xil_defaultlib,../../../../../testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd,
+ADXL362Ctrl.vhd,vhdl,xil_defaultlib,../../../../../testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd,
+AccelArithmetics.vhd,vhdl,xil_defaultlib,../../../../../testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd,
+AccelerometerCtl.vhd,vhdl,xil_defaultlib,../../../../../testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd,
+AccelerometerCtl2_2.vhd,vhdl,xil_defaultlib,../../../../../testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/sim/AccelerometerCtl2_2.vhd,

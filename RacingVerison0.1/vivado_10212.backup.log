@@ -1,0 +1,212 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Nov 28 13:44:26 2019
+# Process ID: 10212
+# Current directory: H:/Documents/GitHub/Verilog_game/Racing
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13812 H:\Documents\GitHub\Verilog_game\Racing\Racing.xpr
+# Log file: H:/Documents/GitHub/Verilog_game/Racing/vivado.log
+# Journal file: H:/Documents/GitHub/Verilog_game/Racing\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Documents/GitHub/Verilog_game/Racing/Racing.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'AccelerometerCtl2_2' is locked:
+* IP definition 'AccelerometerCtl2 (4.0)' for IP 'AccelerometerCtl2_2' (customized with software release 2016.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'AccelerometerCtl2_0' is locked:
+* IP definition 'AccelerometerCtl2 (3.0)' for IP 'AccelerometerCtl2_0' (customized with software release 2016.2) was not found in the IP Catalog.
+* IP 'AccelerometerCtl2_0' contains one or more locked subcores.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 780.539 ; gain = 213.340
+update_compile_order -fileset sources_1
+create_project project_1 H:/Documents/GitHub/Verilog_game/project_1 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 883.938 ; gain = 0.000
+add_files {H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/list_ch14_01_font_rom.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/keyboard.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/graphics.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/game_over.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/vga_sync.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/song1.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/top_race_game.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/ps2_rx.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/road.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/car.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/finish.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/time_text.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/start.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/game_state.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/text.v H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/PWM.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse H:/Documents/GitHub/Verilog_game/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 28 13:52:53 2019] Launched synth_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/project_1/project_1.runs/synth_1/runme.log
+[Thu Nov 28 13:52:53 2019] Launched impl_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742939A
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/project_1/project_1.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/project_1/project_1.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+current_project Racing
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 28 14:12:01 2019] Launched synth_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/synth_1/runme.log
+[Thu Nov 28 14:12:01 2019] Launched impl_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 28 14:15:25 2019] Launched synth_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/synth_1/runme.log
+[Thu Nov 28 14:15:25 2019] Launched impl_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1946.625 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742939A
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292742939A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 1946.625 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742939A
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Digilent/210292742939A is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+disconnect_hw_server
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Nexys4DDR-210292742939A" may be locked by another hw_server.
+current_project project_1
+close_project
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source H:/Documents/GitHub/Verilog_game/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'H:/Documents/GitHub/Verilog_game/project_1/project_1.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Nov 28 14:29:25 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 28 14:29:25 2019...
+disconnect_hw_server
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Nexys4DDR-210292742939A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742939A
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292742939A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742939A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See H:/Documents/GitHub/Verilog_game/Racing/vivado_pid10212.debug)
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See H:/Documents/GitHub/Verilog_game/Racing/vivado_pid10212.debug)
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Nov 28 14:49:29 2019] Launched impl_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 28 14:51:21 2019] Launched synth_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/synth_1/runme.log
+[Thu Nov 28 14:51:21 2019] Launched impl_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 28 15:06:18 2019] Launched synth_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/synth_1/runme.log
+[Thu Nov 28 15:06:18 2019] Launched impl_1...
+Run output will be captured here: H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/Verilog_game/Racing/Racing.runs/impl_1/top_race_game.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 15:18:47 2019...
