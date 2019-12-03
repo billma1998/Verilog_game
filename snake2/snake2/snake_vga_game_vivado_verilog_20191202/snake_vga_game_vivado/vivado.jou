@@ -2,13 +2,13 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Dec  3 11:31:12 2019
-# Process ID: 2944
-# Current directory: H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13432 H:\snake2\snake_vga_game_vivado_verilog_20191202\snake_vga_game_vivado\snake_vga_game_vivado.xpr
-# Log file: H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/vivado.log
-# Journal file: H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado\vivado.jou
+# Start of session at: Tue Dec  3 16:04:29 2019
+# Process ID: 150196
+# Current directory: C:/Users/22270/Documents/GitHub/Verilog_game/snake2/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent143400 C:\Users\22270\Documents\GitHub\Verilog_game\snake2\snake2\snake_vga_game_vivado_verilog_20191202\snake_vga_game_vivado\snake_vga_game_vivado.xpr
+# Log file: C:/Users/22270/Documents/GitHub/Verilog_game/snake2/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/vivado.log
+# Journal file: C:/Users/22270/Documents/GitHub/Verilog_game/snake2/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.xpr
+open_project C:/Users/22270/Documents/GitHub/Verilog_game/snake2/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.xpr
 update_compile_order -fileset sources_1

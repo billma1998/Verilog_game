@@ -31,7 +31,20 @@ output mosi, ss, sclk,
     output reg [3:0] VGA_G,     // 4-bit VGA green output
     output reg [3:0] VGA_B,      // 4-bit VGA blue output
         output a ,b,c,d,e,f,g,
-            output [7:0] an
+            output [7:0] an,
+            output pwm, aud_on,
+            
+              input vauxp2,
+   input vauxn2,
+   input vauxp3,
+   input vauxn3,
+   input vauxp10,
+   input vauxn10,
+   input vauxp11,
+   input vauxn11,
+   input vp_in,
+   input vn_in
+            
     );
 wire left_key, right_key, up_key,down_key;
     wire rst = RST_BTN;     // reset is active high
@@ -49,6 +62,23 @@ wire left_key, right_key, up_key,down_key;
     wire active;        // high during active pixel drawing
     wire screenend;     // high for one tick at the end of screen
     wire animate;       // high for one tick at end of active drawing
+
+
+
+   wire enable;  
+   wire ready;
+   wire [15:0] data;   
+  reg [6:0] Address_in;     
+   reg [32:0] decimal;   
+   reg [3:0] digital0;
+   reg [3:0] digital1;
+   reg [3:0] digital2;
+   reg [3:0] digital3;
+   reg [3:0] digital4;
+   reg [3:0] digital5;
+   reg [3:0] digital6;
+
+
 
     vga640x480 display (
         .i_clk(CLK), 
@@ -317,11 +347,94 @@ assign right_key_3 = (x_out>379)?1:0;
 assign up_key_3 = (y_out<121)?1:0;
 assign down_key_3 =(y_out>379)?1:0;
 
+
+  xadc_wiz_0  XLXI_7 (.daddr_in(Address_in), //addresses can be found in the artix 7 XADC user guide DRP register space
+                     .dclk_in(CLK), 
+                     .den_in(enable), 
+                     .di_in(0), 
+                     .dwe_in(0), 
+                     .busy_out(),                    
+                     .vauxp2(vauxp2),
+                     .vauxn2(vauxn2),
+                     .vauxp3(vauxp3),
+                     .vauxn3(vauxn3),
+                     .vauxp10(vauxp10),
+                     .vauxn10(vauxn10),
+                     .vauxp11(vauxp11),
+                     .vauxn11(vauxn11),
+                     .vn_in(vn_in), 
+                     .vp_in(vp_in), 
+                     .alarm_out(), 
+                     .do_out(data), 
+                     .reset_in(0),
+                     .eoc_out(enable),
+                     .channel_out(),
+                     .drdy_out(ready));
+                     
+                     
+        reg [32:0] count; 
+     //binary to decimal conversion
+      always @ (posedge(CLK))
+      begin
+      
+        if(count == 10000000)begin
+        
+        decimal = data >> 4;
+        //looks nicer if our max value is 1V instead of .999755
+        if(decimal >= 4093)
+        begin
+            digital0 = 0;
+            digital1 = 0;
+            digital2 = 0;
+            digital3 = 0;
+            digital4 = 0;
+            digital5 = 0;
+            digital6 = 1;
+            count = 0;
+        end
+        else 
+        begin
+            decimal = decimal * 250000;
+            decimal = decimal >> 10;
+            
+            
+            digital0 = decimal % 10;
+            decimal = decimal / 10;
+            
+            digital1 = decimal % 10;
+            decimal = decimal / 10;
+                   
+            digital2 = decimal % 10;
+            decimal = decimal / 10;
+            
+            digital3 = decimal % 10;
+            decimal = decimal / 10;
+            
+            digital4 = decimal % 10;
+            decimal = decimal / 10;
+                   
+            digital5 = decimal % 10;
+            decimal = decimal / 10; 
+            
+            digital6 = decimal % 10;
+            decimal = decimal / 10; 
+            
+            count = 0;
+        end
+       end
+       
+      count = count + 1;
+               
+      end
+                      
+         
+
     //assign left_key = (x_out<14'b000011111111)? 1:0;
    // assign left_key = (x_out<14'b000011001000)? 1:0;
    // assign right_key = (x_out>14'b000100101100)? 1:0;
 //    assign up_key = (y_out<14'b000011001000)? 1:0;
   //  assign down_key = (y_out>14'b000100101100)? 1:0;
         AccelerometerCtl2_2 acc(.SYSCLK(CLK), .RESET(RST_BTN), .SCLK(sclk), .MOSI(mosi), .MISO(miso), .SS(ss), .ACCEL_X_OUT(x_out), .ACCEL_Y_OUT(y_out));
-
+//song1 mysong(clk, reset, pause, aud_on, pwm);
+song1 mysong(clk, reset,aud_on, pwm);
 endmodule
