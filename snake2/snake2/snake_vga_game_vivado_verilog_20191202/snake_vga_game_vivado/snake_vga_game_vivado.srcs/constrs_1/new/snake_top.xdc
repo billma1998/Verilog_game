@@ -1,0 +1,81 @@
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[7]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[6]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[5]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[4]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {HEX_OUT[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {SEG_SELECT_OUT[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {SEG_SELECT_OUT[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {SEG_SELECT_OUT[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {SEG_SELECT_OUT[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[11]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[10]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {COLOUR_OUT[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports CLK]
+set_property IOSTANDARD LVCMOS33 [get_ports HS]
+set_property IOSTANDARD LVCMOS33 [get_ports RESET]
+set_property IOSTANDARD LVCMOS33 [get_ports VS]
+set_property PACKAGE_PIN E3 [get_ports CLK]
+set_property PACKAGE_PIN B11 [get_ports HS]
+set_property PACKAGE_PIN B12 [get_ports VS]
+set_property PACKAGE_PIN C12 [get_ports RESET]
+set_property PACKAGE_PIN A4 [get_ports {COLOUR_OUT[11]}]
+set_property PACKAGE_PIN C5 [get_ports {COLOUR_OUT[10]}]
+set_property PACKAGE_PIN B4 [get_ports {COLOUR_OUT[9]}]
+set_property PACKAGE_PIN A3 [get_ports {COLOUR_OUT[8]}]
+set_property PACKAGE_PIN A6 [get_ports {COLOUR_OUT[7]}]
+set_property PACKAGE_PIN B6 [get_ports {COLOUR_OUT[6]}]
+set_property PACKAGE_PIN A5 [get_ports {COLOUR_OUT[5]}]
+set_property PACKAGE_PIN C6 [get_ports {COLOUR_OUT[4]}]
+set_property PACKAGE_PIN D8 [get_ports {COLOUR_OUT[3]}]
+set_property PACKAGE_PIN D7 [get_ports {COLOUR_OUT[2]}]
+set_property PACKAGE_PIN C7 [get_ports {COLOUR_OUT[1]}]
+set_property PACKAGE_PIN B7 [get_ports {COLOUR_OUT[0]}]
+#set_property PACKAGE_PIN J14 [get_ports {SEG_SELECT_OUT[3]}]
+#set_property PACKAGE_PIN T9 [get_ports {SEG_SELECT_OUT[2]}]
+#set_property PACKAGE_PIN J18 [get_ports {SEG_SELECT_OUT[1]}]
+#set_property PACKAGE_PIN J17 [get_ports {SEG_SELECT_OUT[0]}]
+#set_property PACKAGE_PIN H15 [get_ports {HEX_OUT[7]}]
+#set_property PACKAGE_PIN L18 [get_ports {HEX_OUT[6]}]
+#set_property PACKAGE_PIN T11 [get_ports {HEX_OUT[5]}]
+#set_property PACKAGE_PIN P15 [get_ports {HEX_OUT[4]}]
+#set_property PACKAGE_PIN K13 [get_ports {HEX_OUT[3]}]
+#set_property PACKAGE_PIN K16 [get_ports {HEX_OUT[2]}]
+#set_property PACKAGE_PIN R10 [get_ports {HEX_OUT[1]}]
+#set_property PACKAGE_PIN T10 [get_ports {HEX_OUT[0]}]
+
+
+
+set_property PACKAGE_PIN N17 [get_ports BINC]
+set_property IOSTANDARD LVCMOS33 [get_ports BINC]
+
+set_property PACKAGE_PIN M18 [get_ports BINU]
+set_property IOSTANDARD LVCMOS33 [get_ports BINU]
+
+set_property PACKAGE_PIN P17 [get_ports BINL]
+set_property IOSTANDARD LVCMOS33 [get_ports BINL]
+
+set_property PACKAGE_PIN M17 [get_ports BINR]
+set_property IOSTANDARD LVCMOS33 [get_ports BINR]
+
+
+set_property PACKAGE_PIN P18 [get_ports BIND]
+set_property IOSTANDARD LVCMOS33 [get_ports BIND]
+
+#set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } [get_ports { BTNU }]; #IO_L4N_T0_D05_14 Sch=btnu
+#set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { BTNL }]; #IO_L12P_T1_MRCC_14 Sch=btnl
+#set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { BTNR }]; #IO_L10N_T1_D15_14 Sch=btnr
+#set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports { BTND }]; #IO_L9N_T1_DQS_D13_14 Sch=btnd
+
+

@@ -1,0 +1,656 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Dec  2 17:32:29 2019
+# Process ID: 12428
+# Current directory: H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.runs/synth_2
+# Command line: vivado.exe -log wrapper_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper_module.tcl
+# Log file: H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.runs/synth_2/wrapper_module.vds
+# Journal file: H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source wrapper_module.tcl -notrace
+Command: synth_design -top wrapper_module -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2892 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 372.559 ; gain = 101.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper_module' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/wrapper_module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Navigation_State_Machine' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Navigation_State_Machine.v:2]
+	Parameter Up bound to: 2'b00 
+	Parameter Down bound to: 2'b01 
+	Parameter Left bound to: 2'b10 
+	Parameter Right bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Navigation_State_Machine' (1#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Navigation_State_Machine.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Master_State_Machine' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:2]
+	Parameter IDLE bound to: 2'b00 
+	Parameter PLAY bound to: 2'b01 
+	Parameter WIN bound to: 2'b10 
+	Parameter FAIL bound to: 2'b11 
+	Parameter TIME_OUT bound to: 38'b01101111110000100011101011000000000000 
+INFO: [Synth 8-226] default block is never used [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:28]
+WARNING: [Synth 8-567] referenced signal 'SCORE' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:27]
+WARNING: [Synth 8-567] referenced signal 'Hit_wall_sig' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:27]
+WARNING: [Synth 8-567] referenced signal 'Hit_body_sig' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:27]
+WARNING: [Synth 8-567] referenced signal 'Hit_block_sig' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:27]
+WARNING: [Synth 8-567] referenced signal 'time_cnt' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'Master_State_Machine' (2#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Master_State_Machine.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Target_Generate' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Target_Generate.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LDSR8' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/LDSR8.v:2]
+	Parameter PRI_DATA bound to: 8'b00001010 
+INFO: [Synth 8-6155] done synthesizing module 'LDSR8' (3#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/LDSR8.v:2]
+INFO: [Synth 8-6157] synthesizing module 'LDSR7' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/LDSR7.v:2]
+	Parameter PRI_DATA bound to: 7'b0110010 
+INFO: [Synth 8-6155] done synthesizing module 'LDSR7' (4#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/LDSR7.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Target_Generate' (5#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Target_Generate.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Snake_Control' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:2]
+	Parameter SnakeLength bound to: 50 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter PLAY bound to: 2'b01 
+	Parameter WIN bound to: 2'b10 
+	Parameter FAIL bound to: 2'b11 
+	Parameter Up bound to: 2'b00 
+	Parameter Down bound to: 2'b01 
+	Parameter Left bound to: 2'b10 
+	Parameter Right bound to: 2'b11 
+	Parameter TIME_1S bound to: 29999999 - type: integer 
+	Parameter block1_x bound to: 8'b00011100 
+	Parameter block1_y bound to: 7'b0001011 
+	Parameter block2_x bound to: 8'b00101000 
+	Parameter block2_y bound to: 7'b0001111 
+	Parameter block3_x bound to: 8'b00110111 
+	Parameter block3_y bound to: 7'b0100001 
+	Parameter block4_x bound to: 8'b00111100 
+	Parameter block4_y bound to: 7'b0111100 
+	Parameter NONE bound to: 3'b000 
+	Parameter HEAD bound to: 3'b001 
+	Parameter BODY bound to: 3'b010 
+	Parameter WALL bound to: 3'b011 
+	Parameter BLOCK bound to: 3'b100 
+INFO: [Synth 8-226] default block is never used [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:113]
+INFO: [Synth 8-226] default block is never used [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:132]
+WARNING: [Synth 8-567] referenced signal 'SnakeState_X' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:325]
+WARNING: [Synth 8-567] referenced signal 'SnakeState_Y' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:325]
+WARNING: [Synth 8-567] referenced signal 'Block_light_sig' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:325]
+WARNING: [Synth 8-567] referenced signal 'Search_body_num' should be on the sensitivity list [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:325]
+WARNING: [Synth 8-6014] Unused sequential element PixShift[48].SnakeState_X_reg[49] was removed.  [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:90]
+WARNING: [Synth 8-6014] Unused sequential element PixShift[48].SnakeState_Y_reg[49] was removed.  [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:91]
+WARNING: [Synth 8-3848] Net Hit_body_sig in module/entity Snake_Control does not have driver. [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Snake_Control' (6#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Vga_module' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Vga_module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/clk_div.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (7#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/clk_div.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Colour_Memory' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Colour_Memory.v:2]
+	Parameter IDLE bound to: 2'b00 
+	Parameter PLAY bound to: 2'b01 
+	Parameter WIN bound to: 2'b10 
+	Parameter FAIL bound to: 2'b11 
+	Parameter NONE bound to: 3'b000 
+	Parameter HEAD bound to: 3'b001 
+	Parameter BODY bound to: 3'b010 
+	Parameter WALL bound to: 3'b011 
+	Parameter BLOCK bound to: 3'b100 
+	Parameter HEAD_COLOR bound to: 3'b010 
+	Parameter BODY_COLOR bound to: 3'b011 
+INFO: [Synth 8-226] default block is never used [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Colour_Memory.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'Colour_Memory' (8#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Colour_Memory.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Interface' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/VGA_Interface.v:2]
+	Parameter VertTimeToPulseWidthEnd bound to: 10'b0000000010 
+	Parameter VertTimeToBackPorchEnd bound to: 10'b0000011111 
+	Parameter VertTimeToDispayTimeEnd bound to: 10'b0111111111 
+	Parameter VertTimeToFrontPorchEnd bound to: 10'b1000001001 
+	Parameter HorzTimeToPulseWidthEnd bound to: 10'b0001100000 
+	Parameter HorzTimeToBackPorchEnd bound to: 10'b0010010000 
+	Parameter HorzTimeToDispayTimeEnd bound to: 10'b1100010000 
+	Parameter HorzTimeToFrontPorchEnd bound to: 10'b1100100000 
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Interface' (9#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/VGA_Interface.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Vga_module' (10#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Vga_module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/key_filter.v:1]
+	Parameter IDEL bound to: 4'b0001 
+	Parameter WAIT0 bound to: 4'b0010 
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (11#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/key_filter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper_module' (12#1) [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/wrapper_module.v:2]
+WARNING: [Synth 8-3331] design Vga_module has unconnected port RESET
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port Hit_body_sig
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 430.152 ; gain = 158.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.152 ; gain = 158.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 430.152 ; gain = 158.813
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.srcs/constrs_1/new/snake_top.xdc]
+Finished Parsing XDC File [H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.srcs/constrs_1/new/snake_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.srcs/constrs_1/new/snake_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 784.047 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 784.047 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 784.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_state_reg' in module 'Navigation_State_Machine'
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_state_reg' in module 'Master_State_Machine'
+INFO: [Synth 8-5544] ROM "time_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:132]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [H:/snake2/snake_vga_game_vivado_verilog_20191202/src/Snake_Control.v:132]
+INFO: [Synth 8-5546] ROM "SnakeState_X" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_X" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Reached_Target" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "game_Score" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "SnakeState_X" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "SnakeState_X" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_X" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Reached_Target" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "game_Score" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "SnakeState_X" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Hit_wall_sig" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CLK_25M" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "FrameCount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "COLOUR_IN" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vaild_x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vaild_x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vaild_y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vaild_y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key_filter'
+INFO: [Synth 8-5546] ROM "time_arrive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      Up |                               00 |                               00
+                   Right |                               01 |                               11
+                    Down |                               10 |                               01
+                    Left |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_state_reg' using encoding 'sequential' in module 'Navigation_State_Machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    PLAY |                               01 |                               01
+                     WIN |                               10 |                               10
+                    FAIL |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_state_reg' using encoding 'sequential' in module 'Master_State_Machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDEL |                             0001 |                             0001
+                   WAIT0 |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'key_filter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               50 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 51    
+	                7 Bit    Registers := 51    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 83    
++---Muxes : 
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 5     
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 28    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   3 Input      1 Bit        Muxes := 26    
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Navigation_State_Machine 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+Module Master_State_Machine 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module LDSR8 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module LDSR7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module Target_Generate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 1     
+	   5 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Snake_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               50 Bit    Registers := 1     
+	                8 Bit    Registers := 50    
+	                7 Bit    Registers := 50    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 52    
++---Muxes : 
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Colour_Memory 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     12 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module VGA_Interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+Module key_filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "game_Score" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "SnakeState_Y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SnakeState_X" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "SnakeState_X" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Hit_wall_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Vga_module_inst/clk_div_inst/CLK_25M" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Vga_module_inst/Colour_Memory_inst/FrameCount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/vcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/Vaild_y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/Vaild_y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/Vaild_x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/Vaild_x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/HS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/HS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Vga_module_inst/VGA_Interface_inst/VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_filter_inst0/time_arrive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_filter_inst1/time_arrive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_filter_inst2/time_arrive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_filter_inst3/time_arrive" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_filter_inst4/time_arrive" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port Hit_body_sig
+INFO: [Synth 8-3886] merging instance 'key_filter_inst0/state_reg[2]' (FDCE) to 'key_filter_inst0/state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key_filter_inst0/state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\Snake_Control_inst/refresh_time_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\Snake_Control_inst/refresh_time_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\Snake_Control_inst/refresh_time_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\Snake_Control_inst/refresh_time_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\Snake_Control_inst/refresh_time_cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\Snake_Control_inst/refresh_time_cnt_reg[5] )
+INFO: [Synth 8-3886] merging instance 'key_filter_inst3/state_reg[2]' (FDCE) to 'key_filter_inst3/state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key_filter_inst3/state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'key_filter_inst2/state_reg[2]' (FDCE) to 'key_filter_inst2/state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key_filter_inst2/state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'key_filter_inst4/state_reg[2]' (FDCE) to 'key_filter_inst4/state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key_filter_inst4/state_reg[3] )
+INFO: [Synth 8-3886] merging instance 'key_filter_inst1/state_reg[2]' (FDCE) to 'key_filter_inst1/state_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key_filter_inst1/state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Snake_Control_inst/Snake_light_sig_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Vga_module_inst/Colour_Memory_inst/COLOUR_IN_reg[10]' (FDE) to 'Vga_module_inst/Colour_Memory_inst/COLOUR_IN_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Vga_module_inst/VGA_Interface_inst/COLOUR_OUT_reg[10]' (FDR) to 'Vga_module_inst/VGA_Interface_inst/COLOUR_OUT_reg[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 784.047 ; gain = 512.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Vga_module_inst/VGA_Interface_inst/Vaild_display_reg is being inverted and renamed to Vga_module_inst/VGA_Interface_inst/Vaild_display_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    71|
+|3     |LUT1   |    39|
+|4     |LUT2   |   151|
+|5     |LUT3   |    60|
+|6     |LUT4   |   134|
+|7     |LUT5   |    99|
+|8     |LUT6   |   469|
+|9     |MUXF7  |     2|
+|10    |FDCE   |   130|
+|11    |FDPE   |     5|
+|12    |FDRE   |   659|
+|13    |FDSE   |   413|
+|14    |IBUF   |     7|
+|15    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-------------------------+------+
+|      |Instance                        |Module                   |Cells |
++------+--------------------------------+-------------------------+------+
+|1     |top                             |                         |  2255|
+|2     |  Master_State_Machine_inst     |Master_State_Machine     |    81|
+|3     |  Navigation_State_Machine_inst |Navigation_State_Machine |     5|
+|4     |  Snake_Control_inst            |Snake_Control            |  1162|
+|5     |  Target_Generate_inst          |Target_Generate          |    75|
+|6     |    LDSR7_inst                  |LDSR7                    |    23|
+|7     |    LDSR8_inst                  |LDSR8                    |    31|
+|8     |  Vga_module_inst               |Vga_module               |   596|
+|9     |    Colour_Memory_inst          |Colour_Memory            |    63|
+|10    |    VGA_Interface_inst          |VGA_Interface            |   522|
+|11    |    clk_div_inst                |clk_div                  |    11|
+|12    |  key_filter_inst0              |key_filter               |    63|
+|13    |  key_filter_inst1              |key_filter_0             |    62|
+|14    |  key_filter_inst2              |key_filter_1             |    62|
+|15    |  key_filter_inst3              |key_filter_2             |    62|
+|16    |  key_filter_inst4              |key_filter_3             |    64|
++------+--------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 815.996 ; gain = 544.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 815.996 ; gain = 190.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 815.996 ; gain = 544.656
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 815.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+135 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 815.996 ; gain = 557.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.996 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/snake2/snake_vga_game_vivado_verilog_20191202/snake_vga_game_vivado/snake_vga_game_vivado.runs/synth_2/wrapper_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_module_utilization_synth.rpt -pb wrapper_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 17:33:16 2019...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 24 19:28:10 2019
+# Process ID: 19528
+# Current directory: D:/project_debug_workspace/sanke/snake_vga_game_vivado_verilog/snake_vga_game_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20140 D:\project_debug_workspace\sanke\snake_vga_game_vivado_verilog\snake_vga_game_vivado\snake_vga_game_vivado.xpr
+# Log file: D:/project_debug_workspace/sanke/snake_vga_game_vivado_verilog/snake_vga_game_vivado/vivado.log
+# Journal file: D:/project_debug_workspace/sanke/snake_vga_game_vivado_verilog/snake_vga_game_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 24 19:28:43 2019...
