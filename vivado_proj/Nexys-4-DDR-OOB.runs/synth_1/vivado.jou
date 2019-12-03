@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 18 16:20:20 2018
+# Process ID: 12172
+# Current directory: D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-OOB/proj/Nexys-4-DDR-OOB.runs/synth_1
+# Command line: vivado.exe -log Nexys4DdrUserDemo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys4DdrUserDemo.tcl
+# Log file: D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-OOB/proj/Nexys-4-DDR-OOB.runs/synth_1/Nexys4DdrUserDemo.vds
+# Journal file: D:/Github/releases/in-work/Nexys-4-DDR/Nexys-4-DDR-OOB/proj/Nexys-4-DDR-OOB.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Nexys4DdrUserDemo.tcl -notrace

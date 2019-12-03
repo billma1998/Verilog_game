@@ -1,0 +1,149 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 73172
+License: Customer
+
+Current time: 	Thu Nov 28 22:02:24 GMT 2019
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 83 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	22270
+User home directory: C:/Users/22270
+User working directory: C:/Users/22270/Documents/GitHub/Verilog_game/Racing
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/22270/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/22270/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/22270/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/22270/Documents/GitHub/Verilog_game/Racing/vivado.log
+Vivado journal file location: 	C:/Users/22270/Documents/GitHub/Verilog_game/Racing/vivado.jou
+Engine tmp dir: 	C:/Users/22270/Documents/GitHub/Verilog_game/Racing/.Xil/Vivado-73172-DESKTOP-EU3M2RB
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 608 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\22270\Documents\GitHub\Verilog_game\Racing\Racing.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/22270/Documents/GitHub/Verilog_game/Racing/Racing.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 87 MB (+89253kb) [00:00:09]
+// [Engine Memory]: 637 MB (+516348kb) [00:00:09]
+// [GUI Memory]: 105 MB (+14261kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  2286 ms.
+// Tcl Message: open_project C:/Users/22270/Documents/GitHub/Verilog_game/Racing/Racing.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/22270/Desktop/Verilog/Verilog_game/Racing' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 47 MB. Current time: 11/28/19, 10:02:27 PM GMT
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 679.934 ; gain = 81.320 
+// Project name: Racing; location: C:/Users/22270/Documents/GitHub/Verilog_game/Racing; part: xc7a100tcsg324-1
+// [Engine Memory]: 862 MB (+202110kb) [00:00:12]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [GUI Memory]: 112 MB (+1574kb) [00:00:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 55 MB. Current time: 11/28/19, 10:32:31 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 50 MB. Current time: 11/28/19, 11:02:32 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/28/19, 11:32:32 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 12:02:32 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 50 MB. Current time: 11/29/19, 12:32:33 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 1:02:33 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 1:32:34 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 50 MB. Current time: 11/29/19, 2:02:34 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 2:32:34 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 3:02:35 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 3:32:35 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 4:02:35 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 4:32:36 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 5:02:36 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 5:32:36 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 6:02:37 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 6:32:37 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 7:02:37 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 7:32:38 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 8:02:38 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 8:32:38 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 9:02:39 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 9:32:39 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 10:02:39 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 10:32:40 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 11:02:40 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 11:32:40 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 12:02:41 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 12:32:41 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 1:02:41 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 1:32:42 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 2:02:42 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 49 MB. Current time: 11/29/19, 2:32:42 PM GMT
