@@ -69,13 +69,14 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir H:/Documents/TTE_1/TTE_1/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path H:/Documents/TTE_1/TTE_1/project_1/project_1.xpr [current_project]
-  set_property ip_output_repo H:/Documents/TTE_1/TTE_1/project_1/project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.cache/wt [current_project]
+  set_property parent.project_path H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.xpr [current_project]
+  set_property ip_output_repo H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet H:/Documents/TTE_1/TTE_1/project_1/project_1.runs/synth_1/top.dcp
-  read_ip -quiet H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
-  read_xdc H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/constrs_1/new/DDR.xdc
+  add_files -quiet H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/top.dcp
+  read_ip -quiet H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
+  read_ip -quiet H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci
+  read_xdc H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/constrs_1/new/DDR.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

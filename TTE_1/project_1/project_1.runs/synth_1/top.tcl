@@ -24,25 +24,31 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir H:/Documents/TTE_1/TTE_1/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path H:/Documents/TTE_1/TTE_1/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo h:/Documents/TTE_1/TTE_1/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_mem {
-  H:/Documents/TTE_1/TTE_1/sprites.mem
-  H:/Documents/TTE_1/TTE_1/sprites_palette.mem
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/sprites.mem
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/sprites_palette.mem
 }
 read_verilog -library xil_defaultlib {
-  H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/seginterface.v
-  H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v
-  H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/new/sram.v
-  H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/new/vga640x480.v
-  H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/new/top.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/seginterface.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/sram.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/vga640x480.v
+  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v
 }
-read_ip -quiet H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
-set_property used_in_implementation false [get_files -all h:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+read_ip -quiet H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
+set_property used_in_implementation false [get_files -all h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+
+read_ip -quiet H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci
+set_property used_in_implementation false [get_files -all h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -52,8 +58,8 @@ set_property used_in_implementation false [get_files -all h:/Documents/TTE_1/TTE
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/constrs_1/new/DDR.xdc
-set_property used_in_implementation false [get_files H:/Documents/TTE_1/TTE_1/project_1/project_1.srcs/constrs_1/new/DDR.xdc]
+read_xdc H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/constrs_1/new/DDR.xdc
+set_property used_in_implementation false [get_files H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/constrs_1/new/DDR.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

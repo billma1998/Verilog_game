@@ -68,7 +68,7 @@ wire left_key, right_key, up_key,down_key;
    wire enable;  
    wire ready;
    wire [15:0] data;   
-  reg [6:0] Address_in;     
+  reg [6:0] Address_in  = 8'h1b;    
    reg [32:0] decimal;   
    reg [3:0] digital0;
    reg [3:0] digital1;
@@ -328,7 +328,7 @@ wire left_key, right_key, up_key,down_key;
         assign dig7 = x_out[9:9];
 
 
-   seginterface M1 (.clk(CLK),.dig7(dig7),.dig6(dig6),.dig5(dig5),.dig4(dig4),.dig3(dig3),.dig2(dig2),.dig1(dig1),.dig0(dig0),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.an(an));
+   seginterface M1 (.clk(CLK),.dig7(digital6),.dig6(digital5),.dig5(digital4),.dig4(digital3),.dig3(digital2),.dig2(digital1),.dig1(digital0),.dig0(0),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.an(an));
 
     assign left_key_1 = ((x_out>160)&(x_out<200))? 1:0;
     assign right_key_1 = ((340 > x_out)&(x_out>300))? 1:0;
