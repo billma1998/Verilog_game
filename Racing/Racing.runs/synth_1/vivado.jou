@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Nov 28 17:40:42 2019
-# Process ID: 69456
-# Current directory: C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1
+# Start of session at: Wed Dec  4 21:48:08 2019
+# Process ID: 7072
+# Current directory: H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1
 # Command line: vivado.exe -log top_race_game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_race_game.tcl
-# Log file: C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.vds
-# Journal file: C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1\vivado.jou
+# Log file: H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.vds
+# Journal file: H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_race_game.tcl -notrace

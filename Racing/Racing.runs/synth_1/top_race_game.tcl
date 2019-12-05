@@ -24,35 +24,35 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.cache/wt [current_project]
-set_property parent.project_path C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.xpr [current_project]
+set_property webtalk.parent_dir H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.cache/wt [current_project]
+set_property parent.project_path H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.cache/ip [current_project]
+set_property ip_output_repo h:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/new/Acce.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/car.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/finish.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_over.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/graphics.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/keyboard.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/list_ch14_01_font_rom.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/road.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/start.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/time_text.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/vga_sync.v
-  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/new/Acce.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/car.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/finish.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_over.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/graphics.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/keyboard.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/list_ch14_01_font_rom.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/road.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/start.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/time_text.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/vga_sync.v
+  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v
 }
-read_ip -quiet C:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
-set_property used_in_implementation false [get_files -all c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
+read_ip -quiet H:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
+set_property used_in_implementation false [get_files -all h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -62,8 +62,8 @@ set_property used_in_implementation false [get_files -all c:/Users/22270/Desktop
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]
+read_xdc H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

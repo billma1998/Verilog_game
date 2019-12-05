@@ -1,0 +1,113 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 16080
+License: Customer
+
+Current time: 	Wed Dec 04 18:31:41 GMT 2019
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 159 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	u1710568
+User home directory: C:/Users/u1710568
+User working directory: H:/Documents/GitHub/Verilog_game/TTE_4/project_1
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/u1710568/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/u1710568/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/u1710568/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	H:/Documents/GitHub/Verilog_game/TTE_4/project_1/vivado.log
+Vivado journal file location: 	H:/Documents/GitHub/Verilog_game/TTE_4/project_1/vivado.jou
+Engine tmp dir: 	H:/Documents/GitHub/Verilog_game/TTE_4/project_1/.Xil/Vivado-16080-F211-16
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27014@license.eng.warwick.ac.uk
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	155 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 597 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: H:\Documents\GitHub\Verilog_game\TTE_4\project_1\project_1.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project H:/Documents/GitHub/Verilog_game/TTE_4/project_1/project_1.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project H:/Documents/GitHub/Verilog_game/TTE_4/project_1/project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'H:/Documents/ES3B2/TTE_4/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+87121kb) [00:00:07]
+// [Engine Memory]: 663 MB (+544156kb) [00:00:07]
+// [GUI Memory]: 93 MB (+3356kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  2164 ms.
+// [Engine Memory]: 704 MB (+7417kb) [00:00:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 704 MB. GUI used memory: 50 MB. Current time: 12/4/19, 6:31:44 PM GMT
+// Project name: project_1; location: H:/Documents/GitHub/Verilog_game/TTE_4/project_1; part: xc7a100tcsg324-1
+// [GUI Memory]: 101 MB (+3079kb) [00:00:10]
+// [Engine Memory]: 756 MB (+18114kb) [00:00:10]
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 111 MB (+5139kb) [00:00:12]
+// Tcl Message: update_compile_order -fileset sources_1 

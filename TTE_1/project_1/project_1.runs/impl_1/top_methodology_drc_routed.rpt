@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Dec  4 18:23:56 2019
-| Host         : F211-16 running 64-bit major release  (build 9200)
+| Date         : Thu Dec  5 02:10:43 2019
+| Host         : F211-10 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
 | Device       : xc7a100tcsg324-1
@@ -23,16 +23,16 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 237
+             Violations found: 231
 +-----------+----------+-----------------------------------------------------------+------------+
 | Rule      | Severity | Description                                               | Violations |
 +-----------+----------+-----------------------------------------------------------+------------+
 | SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 96         |
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal                | 61         |
-| SYNTH-11  | Warning  | DSP output not registered                                 | 3          |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal                | 58         |
+| SYNTH-11  | Warning  | DSP output not registered                                 | 2          |
 | SYNTH-13  | Warning  | combinational multiplier                                  | 2          |
 | SYNTH-14  | Warning  | DSP cannot absorb non-zero init register                  | 3          |
-| TIMING-16 | Warning  | Large setup violation                                     | 27         |
+| TIMING-16 | Warning  | Large setup violation                                     | 25         |
 | TIMING-17 | Warning  | Non-clocked sequential cell                               | 19         |
 | TIMING-18 | Warning  | Missing input or output delay                             | 26         |
 +-----------+----------+-----------------------------------------------------------+------------+
@@ -601,107 +601,107 @@ Related violations: <none>
 
 SYNTH-6#17 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#18 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#19 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#20 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#21 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#22 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#23 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#24 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#25 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_7_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#26 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_7_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#27 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#28 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#29 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_7_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#30 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_7_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#31 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#32 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#33 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#34 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#35 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#36 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#37 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_1_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_1_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#38 Warning
@@ -721,120 +721,100 @@ Related violations: <none>
 
 SYNTH-6#41 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#42 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#43 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#44 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#45 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#46 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#47 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#48 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#49 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#50 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#51 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#52 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#53 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#54 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#55 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#56 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#57 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#58 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
-SYNTH-6#59 Warning
-Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
-SYNTH-6#60 Warning
-Timing of a block RAM might be sub-optimal  
 The timing for the instance vram_b/memory_array_reg_7_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
-Related violations: <none>
-
-SYNTH-6#61 Warning
-Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-11#1 Warning
 DSP output not registered  
-DSP instance address_fb10 is not fully pipelined on the output side. MREG/PREG are not used.
-Related violations: <none>
-
-SYNTH-11#2 Warning
-DSP output not registered  
 DSP instance address_fb10__0 is not fully pipelined on the output side. MREG/PREG are not used.
 Related violations: <none>
 
-SYNTH-11#3 Warning
+SYNTH-11#2 Warning
 DSP output not registered  
 DSP instance address_fb12 is not fully pipelined on the output side. MREG/PREG are not used.
 Related violations: <none>
@@ -866,137 +846,127 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.004 ns between pix_stb_reg/C (clocked by sys_clk_pin) and address_a_reg[10]_rep__5/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.687 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -1.066 ns between vram_a/memory_array_reg_0_1/CLKARDCLK (clocked by sys_clk_pin) and colour_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.704 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -3.682 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.709 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -3.689 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.855 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -3.833 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.757 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -3.951 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.782 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -4.485 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.811 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -4.502 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.814 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -4.547 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.837 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -4.587 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.885 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -4.623 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.050 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -4.730 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.082 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -4.731 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.119 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -4.742 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.168 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -4.836 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.220 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -4.905 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.269 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -4.910 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.306 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -4.958 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.325 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -4.964 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.332 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -4.967 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.333 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -5.089 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.474 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -5.169 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.577 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -5.169 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.604 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -5.174 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.672 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -5.176 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#26 Warning
-Large setup violation  
-There is a large setup violation of -5.197 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#27 Warning
-Large setup violation  
-There is a large setup violation of -5.235 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.697 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-17#1 Warning

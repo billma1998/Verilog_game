@@ -23,11 +23,16 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8116 
+INFO: Helper process launched with PID 2140 
+WARNING: [Synth 8-992] sq_a is already implicitly declared earlier [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:483]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 421.551 ; gain = 114.828
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 435.660 ; gain = 129.125
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:22]
+	Parameter U_BOUND bound to: 9'b001111000 
+	Parameter D_BOUND bound to: 9'b010110100 
+	Parameter L_BOUND bound to: 10'b0001111000 
+	Parameter R_BOUND bound to: 10'b0110100100 
 	Parameter SCREEN_WIDTH bound to: 640 - type: integer 
 	Parameter SCREEN_HEIGHT bound to: 360 - type: integer 
 	Parameter VRAM_DEPTH bound to: 230400 - type: integer 
@@ -44,7 +49,7 @@ INFO: [Synth 8-6157] synthesizing module 'top' [H:/Documents/GitHub/12.4/Verilog
 	Parameter SPRITE_PL_OFFSET bound to: 0 - type: integer 
 	Parameter SPRITE_PL_X bound to: 304 - type: integer 
 	Parameter SPRITE_PL_Y bound to: 328 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'sprites_palette.mem' is read successfully [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:165]
+INFO: [Synth 8-3876] $readmem data file 'sprites_palette.mem' is read successfully [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:169]
 INFO: [Synth 8-6157] synthesizing module 'vga640x480' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/vga640x480.v:23]
 	Parameter HS_STA bound to: 16 - type: integer 
 	Parameter HS_END bound to: 112 - type: integer 
@@ -73,10 +78,10 @@ INFO: [Synth 8-6157] synthesizing module 'seginterface' [H:/Documents/GitHub/12.
 INFO: [Synth 8-6157] synthesizing module 'sevenseg' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (3#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'seginterface' (4#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/seginterface.v:23]
-WARNING: [Synth 8-350] instance 'M1' of module 'seginterface' requires 19 connections, but only 17 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:331]
-INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-16816-F211-16/realtime/xadc_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (5#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-16816-F211-16/realtime/xadc_wiz_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 23 connections, but only 22 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:351]
+WARNING: [Synth 8-350] instance 'M1' of module 'seginterface' requires 19 connections, but only 17 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:354]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-13680-F211-10/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (5#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-13680-F211-10/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 23 connections, but only 22 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:380]
 INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl2_2' [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
@@ -128,17 +133,18 @@ WARNING: [Synth 8-3848] Net m_axis_dout_tdata in module/entity AccelArithmetics 
 INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics' (8#1) [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:75]
 INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (9#1) [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:70]
 INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl2_2' (10#1) [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
-WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_X_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:437]
-WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_Y_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:437]
-WARNING: [Synth 8-350] instance 'acc' of module 'AccelerometerCtl2_2' requires 10 connections, but only 8 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:437]
+WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_X_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:466]
+WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_Y_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:466]
+WARNING: [Synth 8-350] instance 'acc' of module 'AccelerometerCtl2_2' requires 10 connections, but only 8 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:466]
 INFO: [Synth 8-6157] synthesizing module 'song1' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:23]
 INFO: [Synth 8-6157] synthesizing module 'PWM' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'PWM' (11#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v:23]
 INFO: [Synth 8-226] default block is never used [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:80]
 INFO: [Synth 8-6155] done synthesizing module 'song1' (12#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:23]
-WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:382]
-WARNING: [Synth 8-3848] Net clk in module/entity top does not have driver. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:439]
-WARNING: [Synth 8-3848] Net reset in module/entity top does not have driver. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:439]
+WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:411]
+WARNING: [Synth 8-6014] Unused sequential element sq_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:474]
+WARNING: [Synth 8-3848] Net clk in module/entity top does not have driver. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:468]
+WARNING: [Synth 8-3848] Net reset in module/entity top does not have driver. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:468]
 INFO: [Synth 8-6155] done synthesizing module 'top' (13#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:22]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_MAG_OUT[11]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_MAG_OUT[10]
@@ -170,7 +176,7 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 558.496 ; gain = 251.773
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 557.262 ; gain = 250.727
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -179,16 +185,16 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin mysong:clk to constant 0 [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:439]
-WARNING: [Synth 8-3295] tying undriven pin mysong:reset to constant 0 [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:439]
+WARNING: [Synth 8-3295] tying undriven pin mysong:clk to constant 0 [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:468]
+WARNING: [Synth 8-3295] tying undriven pin mysong:reset to constant 0 [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:468]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 558.496 ; gain = 251.773
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 557.262 ; gain = 250.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 558.496 ; gain = 251.773
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 557.262 ; gain = 250.727
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -214,24 +220,24 @@ Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_
 Finished Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.703 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.703 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 873.879 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 873.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.703 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 874.703 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 873.879 ; gain = 567.156
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 874.703 ; gain = 568.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 873.879 ; gain = 567.156
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 874.703 ; gain = 568.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -240,7 +246,7 @@ Applied set_property DONT_TOUCH = true for acc/U0. (constraint file  H:/Document
 Applied set_property DONT_TOUCH = true for acc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for XLXI_7. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 873.879 ; gain = 567.156
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 874.703 ; gain = 568.168
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
 INFO: [Synth 8-5546] ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
@@ -274,6 +280,7 @@ INFO: [Synth 8-5544] ROM "Cmd_Reg[1]" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "Cmd_Reg[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Cnt_Bytes_Sent" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "RESET_INT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sq_a0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -320,7 +327,7 @@ stadxlwaitsampleratetick |                             0100 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:34 ; elapsed = 00:03:56 . Memory (MB): peak = 873.879 ; gain = 567.156
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:37 ; elapsed = 00:03:56 . Memory (MB): peak = 874.703 ; gain = 568.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -337,11 +344,12 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     15 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 4     
-	   2 Input     10 Bit       Adders := 20    
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 12    
 	   2 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 2     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 2     
@@ -351,7 +359,7 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 1     
 	               15 Bit    Registers := 1     
 	               13 Bit    Registers := 3     
-	               12 Bit    Registers := 5     
+	               12 Bit    Registers := 6     
 	               10 Bit    Registers := 11    
 	                9 Bit    Registers := 3     
 	                8 Bit    Registers := 21    
@@ -373,8 +381,9 @@ Detailed RTL Component Info :
 	   2 Input     13 Bit        Muxes := 4     
 	   9 Input     12 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 11    
-	   5 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 3     
 	   4 Input     10 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 3     
 	   4 Input      8 Bit        Muxes := 1     
@@ -394,8 +403,8 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 52    
 	   4 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 3     
-	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
 	   9 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -408,15 +417,16 @@ Module top
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     17 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 5     
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
 +---Registers : 
 	               18 Bit    Registers := 4     
 	               16 Bit    Registers := 1     
 	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
 	               10 Bit    Registers := 5     
 	                9 Bit    Registers := 3     
 	                8 Bit    Registers := 2     
@@ -428,12 +438,14 @@ Detailed RTL Component Info :
 	   2 Input     18 Bit        Muxes := 6     
 	   2 Input     13 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 6     
+	   5 Input     10 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 24    
-	   7 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
 Module vga640x480 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -578,10 +590,12 @@ INFO: [Synth 8-5546] ROM "ADXL_Control/SPI_Interface/SCLK_2X_TICK" won't be mapp
 INFO: [Synth 8-5546] ROM "ADXL_Control/Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ADXL_Control/Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RESET_INT" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:192]
-INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:193]
-INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:193]
-INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:192]
+INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:196]
+INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:197]
+INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:197]
+INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:196]
+DSP Report: Generating DSP digital02, operation Mode is: (A:0x3d090)*B.
+DSP Report: operator digital02 is absorbed into DSP digital02.
 DSP Report: Generating DSP address_fb10, operation Mode is: C'+(A:0x280)*B2.
 DSP Report: register draw_y_reg is absorbed into DSP address_fb10.
 DSP Report: register draw_x_reg is absorbed into DSP address_fb10.
@@ -597,8 +611,6 @@ DSP Report: operator address_fb10 is absorbed into DSP address_fb10.
 DSP Report: Generating DSP address_a0, operation Mode is: C+(A:0x280)*B.
 DSP Report: operator address_a0 is absorbed into DSP address_a0.
 DSP Report: operator address_a1 is absorbed into DSP address_a0.
-DSP Report: Generating DSP digital02, operation Mode is: (A:0x3d090)*B.
-DSP Report: operator digital02 is absorbed into DSP digital02.
 WARNING: [Synth 8-3331] design seginterface has unconnected port rst
 WARNING: [Synth 8-3331] design top has unconnected port sw[3]
 WARNING: [Synth 8-3331] design top has unconnected port sw[2]
@@ -638,7 +650,19 @@ INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__21' (
 INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__13' (FDE) to 'sram:/i_0/memory_array_reg_mux_sel__22'
 INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__5' (FDE) to 'sram:/i_0/memory_array_reg_mux_sel__6'
 INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__22' (FDE) to 'sram:/i_0/memory_array_reg_mux_sel__14'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[0]' (FD) to 'sq_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[1]' (FD) to 'sq_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[2]' (FD) to 'sq_a1_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sq_a1_reg[3] )
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[4]' (FD) to 'sq_a1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[5]' (FD) to 'sq_a1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[6]' (FD) to 'sq_a1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[8]' (FD) to 'sq_a1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[9]' (FD) to 'sq_a1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[10]' (FD) to 'sq_a1_reg[11]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (mysong/aud_on_reg)
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[3]' (FD) to 'VGA_B_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VGA_B_reg[3] )
 INFO: [Synth 8-3886] merging instance 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][0]' (FDRE) to 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][5]'
 INFO: [Synth 8-3886] merging instance 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][3]' (FDRE) to 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (acc/U0/\ADXL_Control/Cmd_Reg_reg[0][5] )
@@ -647,7 +671,7 @@ INFO: [Synth 8-3886] merging instance 'address_s_reg[10]' (FDE) to 'address_s_re
 INFO: [Synth 8-3886] merging instance 'digital6_reg[2]' (FDRE) to 'digital6_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\digital6_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:13 ; elapsed = 00:07:38 . Memory (MB): peak = 1085.285 ; gain = 778.563
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:21 ; elapsed = 00:07:42 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 276, Available = 270. Will try to implement using LUT-RAM. 
 ---------------------------------------------------------------------------------
@@ -661,7 +685,6 @@ ROM:
 |top         | p_0_out        | 256x12        | LUT            | 
 |top         | p_0_out        | 256x12        | LUT            | 
 |song1       | sample_reg_rep | 32768x8       | Block RAM      | 
-|top         | p_0_out        | 256x12        | LUT            | 
 |top         | p_0_out        | 256x12        | LUT            | 
 +------------+----------------+---------------+----------------+
 
@@ -689,11 +712,11 @@ DSP: Preliminary Mapping  Report (see note below)
 +------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top         | (A:0x3d090)*B     | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |top         | C'+(A:0x280)*B2   | 9      | 10     | 10     | -      | 18     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
 |top         | (D+A2)*(B:0x280)  | 9      | 10     | -      | 10     | 21     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
 |top         | PCIN+(A:0x0):B+C' | 30     | 10     | 10     | -      | -1     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
 |top         | C+(A:0x280)*B     | 9      | 10     | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|top         | (A:0x3d090)*B     | 18     | 12     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -782,13 +805,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:22 ; elapsed = 00:07:47 . Memory (MB): peak = 1085.285 ; gain = 778.563
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:30 ; elapsed = 00:07:51 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:07:24 ; elapsed = 00:07:49 . Memory (MB): peak = 1085.285 ; gain = 778.563
+Finished Timing Optimization : Time (s): cpu = 00:07:32 ; elapsed = 00:07:53 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -852,7 +875,7 @@ INFO: [Synth 8-6837] The timing for the instance vram_a/memory_array_reg_7_2 (im
 INFO: [Synth 8-6837] The timing for the instance vram_a/memory_array_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:07:25 ; elapsed = 00:07:51 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Technology Mapping : Time (s): cpu = 00:07:33 ; elapsed = 00:07:55 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -872,10 +895,10 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_0_83 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net n_0_82 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net n_0_81 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_80 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_78 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_79 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[0] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[1] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[2] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
@@ -892,10 +915,10 @@ INFO: [Synth 8-6064] Net address_b[12] is driving 64 big block pins (URAM, BRAM 
 INFO: [Synth 8-6064] Net address_b[13] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[14] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[15] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_67 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net n_0_66 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net n_0_65 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_64 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_62 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_63 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_a[0] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_a[1] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_a[2] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
@@ -916,7 +939,7 @@ INFO: [Synth 8-6064] Net address_a[15] is driving 64 big block pins (URAM, BRAM 
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:07:26 ; elapsed = 00:07:52 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished IO Insertion : Time (s): cpu = 00:07:34 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -929,7 +952,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:07:26 ; elapsed = 00:07:52 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:34 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -941,25 +964,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:27 ; elapsed = 00:07:53 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:35 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:07:27 ; elapsed = 00:07:53 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:35 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:07:27 ; elapsed = 00:07:53 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:35 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:07:27 ; elapsed = 00:07:53 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:35 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -999,18 +1022,18 @@ Report Cell Usage:
 |7     |DSP48E1_3  |     1|
 |8     |DSP48E1_4  |     1|
 |9     |LUT1       |    47|
-|10    |LUT2       |   169|
-|11    |LUT3       |   206|
-|12    |LUT4       |   324|
-|13    |LUT5       |   144|
-|14    |LUT6       |   358|
-|15    |MUXF7      |    47|
-|16    |MUXF8      |     8|
+|10    |LUT2       |   160|
+|11    |LUT3       |   208|
+|12    |LUT4       |   315|
+|13    |LUT5       |   136|
+|14    |LUT6       |   312|
+|15    |MUXF7      |    43|
+|16    |MUXF8      |     7|
 |17    |RAM256X1S  |    96|
 |18    |RAMB36E1   |    64|
 |19    |RAMB36E1_1 |    64|
 |20    |SRL16E     |     8|
-|21    |FDRE       |   790|
+|21    |FDRE       |   791|
 |22    |FDSE       |     6|
 |23    |IBUF       |    13|
 |24    |OBUF       |    34|
@@ -1020,41 +1043,41 @@ Report Instance Areas:
 +------+------------------------+---------------------+------+
 |      |Instance                |Module               |Cells |
 +------+------------------------+---------------------+------+
-|1     |top                     |                     |  2454|
+|1     |top                     |                     |  2380|
 |2     |  acc                   |AccelerometerCtl2_2  |   645|
 |3     |    U0                  |AccelerometerCtl     |   645|
 |4     |      ADXL_Control      |ADXL362Ctrl          |   516|
 |5     |        SPI_Interface   |SPI_If               |    79|
 |6     |      Accel_Calculation |AccelArithmetics     |   105|
 |7     |  M1                    |seginterface         |    56|
-|8     |  display               |vga640x480           |   103|
+|8     |  display               |vga640x480           |   121|
 |9     |  spritebuf             |sram__parameterized0 |   144|
-|10    |  vram_a                |sram                 |   181|
-|11    |  vram_b                |sram_0               |   178|
+|10    |  vram_a                |sram                 |   174|
+|11    |  vram_b                |sram_0               |   171|
 +------+------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:07:27 ; elapsed = 00:07:53 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:35 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:07:14 ; elapsed = 00:07:40 . Memory (MB): peak = 1088.234 ; gain = 466.129
-Synthesis Optimization Complete : Time (s): cpu = 00:07:27 ; elapsed = 00:07:53 . Memory (MB): peak = 1088.234 ; gain = 781.512
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:21 ; elapsed = 00:07:44 . Memory (MB): peak = 1085.203 ; gain = 461.227
+Synthesis Optimization Complete : Time (s): cpu = 00:07:35 ; elapsed = 00:07:56 . Memory (MB): peak = 1085.203 ; gain = 778.668
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 328 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 323 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1088.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1085.203 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 96 instances were transformed.
   RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 96 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-284 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+297 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:07:29 ; elapsed = 00:07:56 . Memory (MB): peak = 1088.234 ; gain = 792.980
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1088.234 ; gain = 0.000
+synth_design: Time (s): cpu = 00:07:36 ; elapsed = 00:07:59 . Memory (MB): peak = 1085.203 ; gain = 790.141
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1085.203 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 18:21:52 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 02:08:34 2019...

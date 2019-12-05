@@ -3,8 +3,8 @@
 
 # XDC: imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc
 
-# IP: C:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
+# IP: H:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==AccelerometerCtl2_2 || ORIG_REF_NAME==AccelerometerCtl2_2} -quiet] -quiet
 
-# XDC: c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
+# XDC: h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==AccelerometerCtl2_2 || ORIG_REF_NAME==AccelerometerCtl2_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet

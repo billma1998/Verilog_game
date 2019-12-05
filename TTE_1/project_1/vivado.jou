@@ -2,16 +2,81 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Dec  3 14:48:01 2019
-# Process ID: 144936
-# Current directory: C:/Users/22270/Documents/GitHub/Verilog_game/TTE_1/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent142852 C:\Users\22270\Documents\GitHub\Verilog_game\TTE_1\project_1\project_1.xpr
-# Log file: C:/Users/22270/Documents/GitHub/Verilog_game/TTE_1/project_1/vivado.log
-# Journal file: C:/Users/22270/Documents/GitHub/Verilog_game/TTE_1/project_1\vivado.jou
+# Start of session at: Wed Dec  4 23:43:48 2019
+# Process ID: 10824
+# Current directory: H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3644 H:\Documents\GitHub\12.4\Verilog_game\TTE_1\project_1\project_1.xpr
+# Log file: H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/vivado.log
+# Journal file: H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/22270/Documents/GitHub/Verilog_game/TTE_1/project_1/project_1.xpr
+open_project H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.xpr
 update_compile_order -fileset sources_1
-import_files -norecurse {C:/Users/22270/Documents/GitHub/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v C:/Users/22270/Documents/GitHub/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

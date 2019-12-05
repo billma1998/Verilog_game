@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Nov 28 17:53:49 2019
-| Host         : DESKTOP-EU3M2RB running 64-bit major release  (build 9200)
+| Date         : Wed Dec  4 21:56:45 2019
+| Host         : F211-10 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_race_game_control_sets_placed.rpt
 | Design       : top_race_game
 | Device       : xc7a100t
@@ -70,31 +70,31 @@ Table of Contents
 |  Clock Signal  |                        Enable Signal                        |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
 +----------------+-------------------------------------------------------------+------------------------------------------------+------------------+----------------+
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/sel                                     | acc/U0/ADXL_Control/Reset_Cnt_Num_Reads        |                1 |              4 |
+|  clk_IBUF_BUFG | inkey/ps2/n_next                                            | reset_IBUF                                     |                2 |              4 |
+|  clk_IBUF_BUFG | race_graph/FSM_onehot_state[3]_i_1_n_0                      |                                                |                1 |              4 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | acc/U0/RESET_INT_reg_n_0                       |                1 |              4 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[0]_0                            | acc/U0/ADXL_Control/Cmd_Reg[0][6]_i_1_n_0      |                2 |              4 |
-|  clk_IBUF_BUFG | race_graph/FSM_onehot_state[3]_i_1_n_0                      |                                                |                1 |              4 |
-|  clk_IBUF_BUFG | inkey/ps2/n_next                                            | reset_IBUF                                     |                2 |              4 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[1][6]_i_2_n_0                   | acc/U0/ADXL_Control/Cmd_Reg[1]0_in[7]          |                2 |              5 |
 |  clk_IBUF_BUFG |                                                             | acc/U0/RESET_INT_reg_n_0                       |                3 |              6 |
 |  clk_IBUF_BUFG |                                                             | acc/U0/ADXL_Control/SPI_Interface/SCLK_2X_DIV0 |                2 |              6 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[2]_1                            | acc/U0/ADXL_Control/Cmd_Reg[2][7]              |                2 |              6 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/Shift_Cmd_Reg                           | acc/U0/RESET_INT_reg_n_0                       |                1 |              7 |
-|  clk_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                |                1 |              8 |
-|  clk_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/DONE_1_i_1_n_0            |                                                |                1 |              8 |
-|  clk_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                |                1 |              8 |
 |  clk_IBUF_BUFG | inkey/ps2/rx_done_tick                                      |                                                |                1 |              8 |
+|  clk_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                |                1 |              8 |
+|  clk_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/DONE_1_i_1_n_0            |                                                |                1 |              8 |
+|  clk_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                |                1 |              8 |
 |  clk_IBUF_BUFG |                                                             | acc/U0/Accel_Calculation/ACCEL_X_CLIP[8]       |                3 |              9 |
 |  clk_IBUF_BUFG |                                                             | acc/U0/ADXL_Control/Cnt_SS_Inactive0           |                3 |             10 |
 |  clk_IBUF_BUFG | race_graph/mycar/car_x_l                                    | game_states/game_reset                         |                3 |             10 |
+|  clk_IBUF_BUFG | vga/v_count_reg0                                            | reset_IBUF                                     |                4 |             10 |
 |  clk_IBUF_BUFG | race_graph/mytext/mytime/raceTime[9]_i_1_n_0                | game_states/game_reset                         |                3 |             10 |
 |  clk_IBUF_BUFG | inkey/ps2/b_next                                            | reset_IBUF                                     |                2 |             10 |
 |  clk_IBUF_BUFG | vga/h_count_reg[9]_i_1_n_0                                  | reset_IBUF                                     |                5 |             10 |
-|  clk_IBUF_BUFG | vga/v_count_reg0                                            | reset_IBUF                                     |                4 |             10 |
 |  clk_IBUF_BUFG | race_graph/race_road/counter0                               | game_states/game_reset                         |                5 |             11 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/E[0]                                    | acc/U0/RESET_INT_reg_n_0                       |                2 |             11 |
 |  clk_IBUF_BUFG | game_states/E[0]                                            |                                                |                3 |             12 |
-|  clk_IBUF_BUFG | acc/U0/ADXL_Control/StC_Adxl_Ctrl[3]                        | acc/U0/RESET_INT_reg_n_0                       |                4 |             12 |
 |  clk_IBUF_BUFG | race_graph/refresh_tick_reg_0                               |                                                |                4 |             12 |
+|  clk_IBUF_BUFG | acc/U0/ADXL_Control/StC_Adxl_Ctrl[3]                        | acc/U0/RESET_INT_reg_n_0                       |                4 |             12 |
 |  clk_IBUF_BUFG |                                                             | game_states/pause_reg_1                        |                5 |             15 |
 |  clk_IBUF_BUFG | mysong/sel                                                  | game_states/pause_reg_1                        |                4 |             15 |
 |  clk_IBUF_BUFG | acc/U0/ADXL_Control/sel                                     | acc/U0/ADXL_Control/ACCEL_X_SUM0               |                4 |             16 |

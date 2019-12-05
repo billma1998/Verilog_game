@@ -78,6 +78,10 @@ wire left_key, right_key, up_key,down_key;
    reg [3:0] digital5;
    reg [3:0] digital6;
 
+        localparam U_BOUND = 9'd120;
+       localparam D_BOUND = 9'd180;
+       localparam L_BOUND = 10'd120;
+        localparam R_BOUND = 10'd420;
 
 
     vga640x480 display (
@@ -284,16 +288,33 @@ wire left_key, right_key, up_key,down_key;
                 // reset frame address
                 address_fb1 <= 0;
                 
+                
+        //                localparam U_BOUND = 9'd120;
+      // localparam D_BOUND = 9'd180;
+      // localparam L_BOUND = 10'd120;
+      //  localparam R_BOUND = 10'd420;
                 // update ship position based on switches
-                if (right_key_1 && pl_x < SCREEN_WIDTH - SPRITE_SIZE)
+                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((pl_x + SPRITE_SIZE<L_BOUND)&(pl_y +SPRITE_SIZE> U_BOUND) & (pl_y <D_BOUND)||(pl_x > R_BOUND)))
                     pl_x <= pl_x + 1;
-                if (left_key_1 && pl_x > 0)
+                if ((left_key_1) && (pl_x > 0)&&((pl_x >R_BOUND)&(pl_y +SPRITE_SIZE > U_BOUND )& (pl_y <D_BOUND)||(pl_x-SPRITE_SIZE < L_BOUND)))
                     pl_x <= pl_x - 1;      
-                if (up_key_1 && pl_y < SCREEN_HEIGHT - SPRITE_SIZE)
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&((pl_y+SPRITE_SIZE<U_BOUND)&(pl_x<R_BOUND)&(pl_x +SPRITE_SIZE>L_BOUND)||(pl_y > D_BOUND)))
                     pl_y <= pl_y + 1;
-                if (down_key_1 & pl_y > 0)
+                if ((up_key_1) && (pl_y > 0)&&((pl_y > D_BOUND)&(pl_x<R_BOUND)&(pl_x+SPRITE_SIZE>L_BOUND)||(pl_y + SPRITE_SIZE < U_BOUND)))
                     pl_y <= pl_y - 1;    
-                if (right_key_2 && pl_x < SCREEN_WIDTH -1 - SPRITE_SIZE)
+                 
+                 
+                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((pl_y +SPRITE_SIZE <= U_BOUND) || pl_y >D_BOUND))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&((pl_y +SPRITE_SIZE <= U_BOUND )|| (pl_y >=D_BOUND)))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&((pl_x>=R_BOUND)||(pl_x +SPRITE_SIZE<=L_BOUND)))
+                    pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&((pl_x>=R_BOUND)||(pl_x+SPRITE_SIZE<=L_BOUND)))
+                    pl_y <= pl_y - 1;    
+                 
+
+               /* if (right_key_2 && pl_x < SCREEN_WIDTH -1 - SPRITE_SIZE)
                   pl_x <= pl_x + 2;
                 if (left_key_2 && pl_x > 1)
                     pl_x <= pl_x - 2;      
@@ -308,13 +329,15 @@ wire left_key, right_key, up_key,down_key;
                 if (up_key_3 && pl_y < SCREEN_HEIGHT-2 - SPRITE_SIZE)
                     pl_y <= pl_y + 3;
                 if (down_key_3 & pl_y > 2)
-                    pl_y <= pl_y - 3;                                        
+                    pl_y <= pl_y - 3;          
+                    
+                    */                              
             end
         end
 
-        VGA_R <= colour[11:8];
-        VGA_G <= colour[7:4];
-        VGA_B <= colour[3:0];
+       // VGA_R <= colour[11:8];
+      //  VGA_G <= colour[7:4];
+        //VGA_B <= colour[3:0];
         
         
     end
@@ -329,15 +352,21 @@ wire left_key, right_key, up_key,down_key;
 
 
    seginterface M1 (.clk(CLK),.dig7(digital6),.dig6(digital5),.dig5(digital4),.dig4(digital3),.dig3(digital2),.dig2(digital1),.dig1(digital0),.dig0(0),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.an(an));
-
-    assign left_key_1 = ((x_out>160)&(x_out<200))? 1:0;
-    assign right_key_1 = ((340 > x_out)&(x_out>300))? 1:0;
-    assign up_key_1 = ((y_out>160)&(y_out<200))? 1:0;
-    assign down_key_1 = ((340 > y_out)&(y_out>300))? 1:0;
+assign left_key_1 = ((x_out<200))? 1:0;
+    assign right_key_1 = ((x_out>300))? 1:0;
+    assign down_key_1 = ((y_out<200))? 1:0;
+    assign up_key_1 = (y_out>300)? 1:0;
+   // assign left_key_1 = ((x_out>160)&(x_out<200))? 1:0;
+   // assign right_key_1 = ((340 > x_out)&(x_out>300))? 1:0;
+   // assign up_key_1 = ((y_out>160)&(y_out<200))? 1:0;
+   // assign down_key_1 = ((340 > y_out)&(y_out>300))? 1:0;
    //   assign left_key_2 = (x_out<161)? 1:0;
     //assign right_key_2 = (339 < x_out)? 1:0;
     //assign up_key_2 = (y_out<161)? 1:0;
 //assign down_key_2 = ((380>y_out)&(339< y_out))? 1:0;
+
+
+/*
       assign left_key_2 = ((x_out>120)&(x_out<161))? 1:0;
     assign right_key_2 = ((380>x_out)&(339 < x_out))? 1:0;
     assign up_key_2 = ((y_out>120)&(y_out<161))? 1:0;
@@ -346,7 +375,7 @@ assign left_key_3 = (x_out<121)?1:0;
 assign right_key_3 = (x_out>379)?1:0;
 assign up_key_3 = (y_out<121)?1:0;
 assign down_key_3 =(y_out>379)?1:0;
-
+*/
 
   xadc_wiz_0  XLXI_7 (.daddr_in(Address_in), //addresses can be found in the artix 7 XADC user guide DRP register space
                      .dclk_in(CLK), 
@@ -437,4 +466,38 @@ assign down_key_3 =(y_out>379)?1:0;
         AccelerometerCtl2_2 acc(.SYSCLK(CLK), .RESET(RST_BTN), .SCLK(sclk), .MOSI(mosi), .MISO(miso), .SS(ss), .ACCEL_X_OUT(x_out), .ACCEL_Y_OUT(y_out));
 //song1 mysong(clk, reset, pause, aud_on, pwm);
 song1 mysong(clk, reset,aud_on, pwm);
+
+wire [11:0] sq_b;
+reg [11:0] sq_b1;
+always @(posedge CLK)
+begin
+sq_b1 <= sq_b;
+end
+assign sq_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign sq_a = (wall_b == 1)?(digital6 ? 12'hf00:12'h0f0):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_b = ((x < R_BOUND) & (x > L_BOUND) & (y > U_BOUND) & (y < D_BOUND))? 1:0;
+ wire [11:0] sq_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] sq_a1;
+always @(posedge CLK)
+begin
+sq_a1 <= sq_a;
+end
+
+//assign sq_a = (wall_b == 1)?12'hf00:12'h000;
+
+always @(posedge CLK)
+begin
+VGA_R[3:0] <= (sq_a1[11:8]+colour[11:8])/2;
+VGA_G[3:0] <= (sq_a1[7:4]+colour[7:4])/2;
+VGA_B[3:0] <= (sq_a1[3:0]+colour[3:0])/2;
+end
+
+       // VGA_R <= colour[11:8];
+      //  VGA_G <= colour[7:4];
+        //VGA_B <= colour[3:0];
 endmodule

@@ -69,13 +69,13 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.cache/wt [current_project]
-  set_property parent.project_path C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.xpr [current_project]
-  set_property ip_output_repo C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.cache/ip [current_project]
+  set_property webtalk.parent_dir H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.cache/wt [current_project]
+  set_property parent.project_path H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.xpr [current_project]
+  set_property ip_output_repo H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.dcp
-  read_ip -quiet C:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
-  read_xdc C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc
+  add_files -quiet H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.dcp
+  read_ip -quiet H:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/AccelerometerCtl2_2.xci
+  read_xdc H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc
   link_design -top top_race_game -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

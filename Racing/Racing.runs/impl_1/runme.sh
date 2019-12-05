@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/impl_1'
+HD_PWD='H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

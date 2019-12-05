@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Nov 28 17:40:42 2019
-# Process ID: 69456
-# Current directory: C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1
+# Start of session at: Wed Dec  4 21:48:08 2019
+# Process ID: 7072
+# Current directory: H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1
 # Command line: vivado.exe -log top_race_game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_race_game.tcl
-# Log file: C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.vds
-# Journal file: C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1\vivado.jou
+# Log file: H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.vds
+# Journal file: H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_race_game.tcl -notrace
 Command: synth_design -top top_race_game -part xc7a100tcsg324-1
@@ -18,38 +18,38 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 64596 
+INFO: Helper process launched with PID 14508 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 410.227 ; gain = 120.613
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 422.680 ; gain = 120.934
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_race_game' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:23]
-INFO: [Synth 8-6157] synthesizing module 'seginterface' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v:23]
-INFO: [Synth 8-6157] synthesizing module 'sevenseg' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (1#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'seginterface' (2#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v:23]
-WARNING: [Synth 8-350] instance 'M1' of module 'seginterface' requires 19 connections, but only 17 given [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:43]
-INFO: [Synth 8-6157] synthesizing module 'keyboard' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/keyboard.v:24]
-INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_race_game' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seginterface' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (1#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'seginterface' (2#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v:23]
+WARNING: [Synth 8-350] instance 'M1' of module 'seginterface' requires 19 connections, but only 17 given [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:43]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/keyboard.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v:23]
 	Parameter idle bound to: 2'b00 
 	Parameter dps bound to: 2'b01 
 	Parameter load bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (3#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'keyboard' (4#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/keyboard.v:24]
-INFO: [Synth 8-6157] synthesizing module 'graphics' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/graphics.v:23]
-INFO: [Synth 8-6157] synthesizing module 'text' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:23]
-INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/list_ch14_01_font_rom.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'font_rom' (5#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/list_ch14_01_font_rom.v:13]
-INFO: [Synth 8-6157] synthesizing module 'time_text' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/time_text.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'time_text' (6#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/time_text.v:23]
-INFO: [Synth 8-6157] synthesizing module 'start' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/start.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'start' (7#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/start.v:23]
-INFO: [Synth 8-6157] synthesizing module 'finish' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/finish.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'finish' (8#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/finish.v:23]
-INFO: [Synth 8-6157] synthesizing module 'game_over' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_over.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'game_over' (9#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_over.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'text' (10#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:23]
-INFO: [Synth 8-6157] synthesizing module 'road' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/road.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (3#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/ps2_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (4#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/keyboard.v:24]
+INFO: [Synth 8-6157] synthesizing module 'graphics' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/graphics.v:23]
+INFO: [Synth 8-6157] synthesizing module 'text' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/list_ch14_01_font_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (5#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/list_ch14_01_font_rom.v:13]
+INFO: [Synth 8-6157] synthesizing module 'time_text' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/time_text.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_text' (6#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/time_text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'start' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/start.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'start' (7#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/start.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finish' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/finish.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'finish' (8#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/finish.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_over' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_over.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_over' (9#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_over.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'text' (10#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'road' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/road.v:23]
 	Parameter MAX_X bound to: 512 - type: integer 
 	Parameter MAX_Y bound to: 480 - type: integer 
 	Parameter road_x_l bound to: 64 - type: integer 
@@ -57,8 +57,8 @@ INFO: [Synth 8-6157] synthesizing module 'road' [C:/Users/22270/Desktop/Verilog/
 	Parameter road_y_t bound to: 0 - type: integer 
 	Parameter road_y_b bound to: 479 - type: integer 
 	Parameter road_x_delta bound to: 120 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'road' (11#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/road.v:23]
-INFO: [Synth 8-6157] synthesizing module 'car' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/car.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'road' (11#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/road.v:23]
+INFO: [Synth 8-6157] synthesizing module 'car' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/car.v:23]
 	Parameter MAX_X bound to: 640 - type: integer 
 	Parameter MAX_Y bound to: 480 - type: integer 
 	Parameter CAR_MAX_X bound to: 32 - type: integer 
@@ -66,11 +66,11 @@ INFO: [Synth 8-6157] synthesizing module 'car' [C:/Users/22270/Desktop/Verilog/V
 	Parameter car_y_t bound to: 410 - type: integer 
 	Parameter car_y_b bound to: 473 - type: integer 
 	Parameter CAR_VELOCITY bound to: 3'b010 
-INFO: [Synth 8-6155] done synthesizing module 'car' (12#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/car.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'graphics' (13#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/graphics.v:23]
-INFO: [Synth 8-6157] synthesizing module 'game_state' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'game_state' (14#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v:23]
-INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/vga_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'car' (12#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/car.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'graphics' (13#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/graphics.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_state' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_state' (14#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/vga_sync.v:23]
 	Parameter HD bound to: 640 - type: integer 
 	Parameter HF bound to: 48 - type: integer 
 	Parameter HB bound to: 16 - type: integer 
@@ -79,21 +79,21 @@ INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/22270/Desktop/Veri
 	Parameter VF bound to: 10 - type: integer 
 	Parameter VB bound to: 33 - type: integer 
 	Parameter VR bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (15#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/vga_sync.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Acce' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/new/Acce.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Acce' (16#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/new/Acce.v:23]
-INFO: [Synth 8-6157] synthesizing module 'song1' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'PWM' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'PWM' (17#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'song1' (18#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:23]
-INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl2_2' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (15#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Acce' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/new/Acce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Acce' (16#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/new/Acce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'song1' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PWM' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PWM' (17#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v:23]
+INFO: [Synth 8-226] default block is never used [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'song1' (18#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v:23]
+INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl2_2' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
 	Parameter NUM_READS_AVG bound to: 16 - type: integer 
 	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'AccelerometerCtl' declared at 'c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:42' bound to instance 'U0' of component 'AccelerometerCtl' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:103]
-INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:70]
+INFO: [Synth 8-3491] module 'AccelerometerCtl' declared at 'h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:42' bound to instance 'U0' of component 'AccelerometerCtl' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:70]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
 	Parameter NUM_READS_AVG bound to: 16 - type: integer 
@@ -102,45 +102,45 @@ INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [c:/Users/22270/Deskt
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
 	Parameter NUM_READS_AVG bound to: 16 - type: integer 
 	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at 'c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:89' bound to instance 'ADXL_Control' of component 'ADXL362Ctrl' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:117]
+INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at 'h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:89' bound to instance 'ADXL_Control' of component 'ADXL362Ctrl' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:117]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
 	Parameter NUM_READS_AVG bound to: 16 - type: integer 
 	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:283]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:312]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:365]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:365]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
-INFO: [Synth 8-3491] module 'SPI_If' declared at 'c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:373]
-INFO: [Synth 8-638] synthesizing module 'SPI_If' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:66]
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:66]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:113]
-INFO: [Synth 8-256] done synthesizing module 'SPI_If' (19#1) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:66]
-INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (20#1) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:117]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (19#1) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/SPI_if.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (20#1) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:117]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
 	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
-INFO: [Synth 8-3491] module 'AccelArithmetics' declared at 'c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:50' bound to instance 'Accel_Calculation' of component 'AccelArithmetics' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:190]
-INFO: [Synth 8-638] synthesizing module 'AccelArithmetics' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:75]
+INFO: [Synth 8-3491] module 'AccelArithmetics' declared at 'h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:50' bound to instance 'Accel_Calculation' of component 'AccelArithmetics' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'AccelArithmetics' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:75]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
 	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
-WARNING: [Synth 8-6014] Unused sequential element Data_Ready_0_reg was removed.  [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:186]
-WARNING: [Synth 8-6014] Unused sequential element Data_Ready_1_reg was removed.  [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:187]
-WARNING: [Synth 8-6014] Unused sequential element ACCEL_X_SQUARE_reg was removed.  [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:200]
-WARNING: [Synth 8-6014] Unused sequential element ACCEL_Y_SQUARE_reg was removed.  [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:201]
-WARNING: [Synth 8-6014] Unused sequential element ACCEL_Z_SQUARE_reg was removed.  [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:202]
-WARNING: [Synth 8-6014] Unused sequential element ACCEL_MAG_SQUARE_reg was removed.  [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:213]
-WARNING: [Synth 8-3848] Net m_axis_dout_tdata in module/entity AccelArithmetics does not have driver. [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:110]
-INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics' (21#1) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:75]
-INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (22#1) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:70]
-INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl2_2' (23#1) [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
-WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_X_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:78]
-WARNING: [Synth 8-350] instance 'acc' of module 'AccelerometerCtl2_2' requires 10 connections, but only 7 given [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:78]
-INFO: [Synth 8-6155] done synthesizing module 'top_race_game' (24#1) [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:23]
+WARNING: [Synth 8-6014] Unused sequential element Data_Ready_0_reg was removed.  [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element Data_Ready_1_reg was removed.  [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_X_SQUARE_reg was removed.  [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Y_SQUARE_reg was removed.  [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Z_SQUARE_reg was removed.  [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_MAG_SQUARE_reg was removed.  [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:213]
+WARNING: [Synth 8-3848] Net m_axis_dout_tdata in module/entity AccelArithmetics does not have driver. [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics' (21#1) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (22#1) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl2_2' (23#1) [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
+WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_X_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:78]
+WARNING: [Synth 8-350] instance 'acc' of module 'AccelerometerCtl2_2' requires 10 connections, but only 7 given [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'top_race_game' (24#1) [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/top_race_game.v:23]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_MAG_OUT[11]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_MAG_OUT[10]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_MAG_OUT[9]
@@ -190,7 +190,7 @@ WARNING: [Synth 8-3331] design time_text has unconnected port pix_x[0]
 WARNING: [Synth 8-3331] design time_text has unconnected port pix_y[0]
 WARNING: [Synth 8-3331] design seginterface has unconnected port rst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 545.746 ; gain = 256.133
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 558.297 ; gain = 256.551
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -203,58 +203,58 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 545.746 ; gain = 256.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 558.297 ; gain = 256.551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 545.746 ; gain = 256.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 558.297 ; gain = 256.551
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc] for cell 'acc/U0'
-Finished Parsing XDC File [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc] for cell 'acc/U0'
-Parsing XDC File [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'mode'. [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:14]
+Parsing XDC File [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc] for cell 'acc/U0'
+Finished Parsing XDC File [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc] for cell 'acc/U0'
+Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mode'. [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:14]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sh_en'. [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sh_en'. [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc:15]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_race_game_propImpl.xdc].
+Finished Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/constrs_1/imports/FPGA-Racing-Game-master/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_race_game_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_race_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_race_game_propImpl.xdc].
+Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_race_game_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_race_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 874.371 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.371 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 859.895 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 859.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 874.371 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 874.371 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 859.895 ; gain = 570.281
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 874.371 ; gain = 572.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 859.895 ; gain = 570.281
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 874.371 ; gain = 572.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for acc/U0. (constraint file  C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc, line 10).
+Applied set_property DONT_TOUCH = true for acc/U0. (constraint file  H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/dont_touch.xdc, line 10).
 Applied set_property DONT_TOUCH = true for acc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 859.895 ; gain = 570.281
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 874.371 ; gain = 572.625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2_rx'
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -270,7 +270,7 @@ INFO: [Synth 8-5544] ROM "refresh_tick0" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "refresh_tick0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'game_reset_reg' into 'start_en_reg' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v:40]
+INFO: [Synth 8-4471] merging register 'game_reset_reg' into 'start_en_reg' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/game_state.v:40]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'game_state'
 INFO: [Synth 8-5544] ROM "start_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -317,9 +317,9 @@ INFO: [Synth 8-5546] ROM "RESET_INT" won't be mapped to RAM because it is too sp
                     load |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2_rx'
-WARNING: [Synth 8-327] inferring latch for variable 'bit_addr_reg' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:42]
-WARNING: [Synth 8-327] inferring latch for variable 'text_rgb_reg' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:70]
-WARNING: [Synth 8-327] inferring latch for variable 'rom_addr_reg' [C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'bit_addr_reg' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'text_rgb_reg' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_addr_reg' [H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/text.v:49]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -384,7 +384,7 @@ stadxlwaitsampleratetick |                             0100 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:30 ; elapsed = 00:05:36 . Memory (MB): peak = 859.895 ; gain = 570.281
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:32 ; elapsed = 00:03:54 . Memory (MB): peak = 874.371 ; gain = 572.625
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -712,7 +712,7 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5544] ROM "mystart/char_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "crash/char_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "mytime/raceTime" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'ADXL_Control/Cmd_Reg_Data_Addr_reg[1:0]' into 'ADXL_Control/Cmd_Reg_Data_Addr_reg[1:0]' [c:/Users/22270/Desktop/Verilog/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:451]
+INFO: [Synth 8-4471] merging register 'ADXL_Control/Cmd_Reg_Data_Addr_reg[1:0]' into 'ADXL_Control/Cmd_Reg_Data_Addr_reg[1:0]' [h:/Documents/GitHub/12.4/Verilog_game/testgame2/testgame2.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/ADXL362Ctrl.vhd:451]
 INFO: [Synth 8-5544] ROM "ADXL_Control/Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ADXL_Control/Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "ADXL_Control/SPI_Interface/SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
@@ -738,7 +738,7 @@ INFO: [Synth 8-3886] merging instance 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][3]' (F
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (acc/U0/\ADXL_Control/Cmd_Reg_reg[0][5] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (acc/U0/\ADXL_Control/Cmd_Reg_reg[1][7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:41 ; elapsed = 00:11:54 . Memory (MB): peak = 859.895 ; gain = 570.281
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:05 ; elapsed = 00:07:30 . Memory (MB): peak = 874.371 ; gain = 572.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -789,13 +789,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:48 ; elapsed = 00:12:02 . Memory (MB): peak = 859.895 ; gain = 570.281
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:11 ; elapsed = 00:07:36 . Memory (MB): peak = 874.371 ; gain = 572.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:11:54 ; elapsed = 00:12:08 . Memory (MB): peak = 990.426 ; gain = 700.813
+Finished Timing Optimization : Time (s): cpu = 00:07:16 ; elapsed = 00:07:40 . Memory (MB): peak = 998.930 ; gain = 697.184
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -830,7 +830,7 @@ INFO: [Synth 8-6837] The timing for the instance mysong/sample_reg_rep_0_5 (impl
 INFO: [Synth 8-6837] The timing for the instance mysong/sample_reg_rep_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance mysong/sample_reg_rep_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:11:55 ; elapsed = 00:12:09 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Technology Mapping : Time (s): cpu = 00:07:16 ; elapsed = 00:07:41 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -854,7 +854,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished IO Insertion : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -867,7 +867,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -879,25 +879,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -992,17 +992,17 @@ Report Instance Areas:
 |19    |  vga                   |vga_sync            |   167|
 +------+------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:11:56 ; elapsed = 00:12:10 . Memory (MB): peak = 991.445 ; gain = 701.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:17 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:11:42 ; elapsed = 00:12:04 . Memory (MB): peak = 991.445 ; gain = 387.684
-Synthesis Optimization Complete : Time (s): cpu = 00:11:57 ; elapsed = 00:12:11 . Memory (MB): peak = 991.445 ; gain = 701.832
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:05 ; elapsed = 00:07:29 . Memory (MB): peak = 999.938 ; gain = 382.117
+Synthesis Optimization Complete : Time (s): cpu = 00:07:18 ; elapsed = 00:07:42 . Memory (MB): peak = 999.938 ; gain = 698.191
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 991.445 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.938 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 18 instances were transformed.
   LD => LDCE: 18 instances
@@ -1010,10 +1010,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 203 Infos, 66 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:11:59 ; elapsed = 00:12:14 . Memory (MB): peak = 991.445 ; gain = 714.848
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 991.445 ; gain = 0.000
+synth_design: Time (s): cpu = 00:07:20 ; elapsed = 00:07:45 . Memory (MB): peak = 999.938 ; gain = 711.309
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.938 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/22270/Desktop/Verilog/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'H:/Documents/GitHub/12.4/Verilog_game/Racing/Racing.runs/synth_1/top_race_game.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_race_game_utilization_synth.rpt -pb top_race_game_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 28 17:53:03 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 21:55:58 2019...
