@@ -77,7 +77,7 @@ wire left_key, right_key, up_key,down_key;
    reg [3:0] digital4;
    reg [3:0] digital5;
    reg [3:0] digital6;
-
+   reg gameend;
         localparam U_BOUND = 9'd50;
        localparam D_BOUND = 9'd80;
        localparam L_BOUND = 10'd0;
@@ -98,6 +98,15 @@ wire left_key, right_key, up_key,down_key;
        localparam D_BOUND3 = 9'd320;
        localparam L_BOUND3 = 10'd540;
         localparam R_BOUND3 = 10'd560;
+
+
+        localparam U_BOUND4 = 9'd50;
+       localparam D_BOUND4 = 9'd100;
+       localparam L_BOUND4 = 10'd260;
+        localparam R_BOUND4 = 10'd330;
+
+
+
 
         localparam U_BOUND5 = 9'd200;
        localparam D_BOUND5 = 9'd300;
@@ -335,7 +344,8 @@ wire left_key, right_key, up_key,down_key;
                     pl_y <= pl_y - 1;    
                  
 */
-
+if (gameend == 0)
+begin
 if(pl_x <= 150)
 begin
                 if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((((pl_x + SPRITE_SIZE<L_BOUND)&(pl_y +SPRITE_SIZE> U_BOUND) & (pl_y <D_BOUND))||(pl_x > R_BOUND))&&(((pl_x + SPRITE_SIZE<L_BOUND1)&(pl_y +SPRITE_SIZE> U_BOUND1) & (pl_y <D_BOUND1))||(pl_x > R_BOUND1))))
@@ -362,6 +372,65 @@ begin
                   //  pl_y <= pl_y - 1; 
                   if ((up_key_1) && (pl_y > 0) )  
                   pl_y <= pl_y - 1;
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                     //             if ((right_key_2) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE-2)&&((((pl_x + SPRITE_SIZE<(L_BOUND-2))&(pl_y +SPRITE_SIZE> U_BOUND) & (pl_y <D_BOUND))||(pl_x > (R_BOUND+2)))&&(((pl_x + SPRITE_SIZE<(L_BOUND1-2))&(pl_y +SPRITE_SIZE> U_BOUND1) & (pl_y <D_BOUND1))||(pl_x > (R_BOUND1+2)))))
+              //      pl_x <= pl_x + 2;
+              //  if ((left_key_2) && (pl_x > 0)&&((((pl_x >R_BOUND1+2)&(pl_y +SPRITE_SIZE > U_BOUND )& (pl_y <D_BOUND))||(pl_x-SPRITE_SIZE < (L_BOUND-1)))&&(((pl_x >(R_BOUND1+3))&(pl_y +SPRITE_SIZE > U_BOUND1 )& (pl_y <D_BOUND1))||(pl_x-SPRITE_SIZE < (L_BOUND1-2)))))
+                //    pl_x <= pl_x - 2;      
+               // if ((down_key_2) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE-2) &&((((pl_y+SPRITE_SIZE<(U_BOUND-2))&(pl_x<R_BOUND)&(pl_x +SPRITE_SIZE>L_BOUND))&&(pl_y > (D_BOUND+2)))||(((pl_y+SPRITE_SIZE<(U_BOUND1-2))&(pl_x<R_BOUND1)&(pl_x +SPRITE_SIZE>L_BOUND1))||(pl_y > (D_BOUND1+2)))))
+                //    pl_y <= pl_y + 2;
+               // if ((up_key_1) && (pl_y > 0)&&((((pl_y > D_BOUND)&(pl_x<R_BOUND)&(pl_x+SPRITE_SIZE>L_BOUND))||(pl_y + SPRITE_SIZE < U_BOUND))&&(((pl_y > D_BOUND1)&(pl_x<R_BOUND1)&(pl_x+SPRITE_SIZE>L_BOUND1))||(pl_y + SPRITE_SIZE < U_BOUND1))))
+                    //pl_y <= pl_y - 1;    
+                 if ((down_key_2) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE-2)&&(pl_x>R_BOUND1 ))
+                 pl_y <= pl_y + 2;
+                 if ((down_key_2) && (pl_y  < U_BOUND1 - SPRITE_SIZE-2)&&((pl_x<= R_BOUND1 )))
+                 pl_y <= pl_y + 2;         
+                if (right_key_2) 
+                 pl_x <= pl_x + 2;
+                    
+            
+               // if ((left_key_2) && (pl_x > 0)&&(((pl_y +SPRITE_SIZE <= (U_BOUND -2) )|| (pl_y >=(D_BOUND+3)))&&((pl_y +SPRITE_SIZE <= (U_BOUND1-2) )|| (pl_y >=(D_BOUND1+3)))))
+               //     pl_x <= pl_x - 2;    
+                 if ((left_key_2)&&(pl_y+SPRITE_SIZE>=U_BOUND)&&(pl_x > (R_BOUND1+3)))
+                     pl_x = pl_x -2;   
+                  if ((left_key_2)&&(pl_y+SPRITE_SIZE< U_BOUND))   
+                       pl_x = pl_x -2;     
+               // if ((down_key_2) && (pl_y < (SCREEN_HEIGHT - SPRITE_SIZE-1)) &&(((pl_x>=(R_BOUND+10)||(pl_x +SPRITE_SIZE<=(L_BOUND-2)))&&((pl_x>=(R_BOUND1+1))||((pl_x +SPRITE_SIZE)<=(L_BOUND1-2))))));
+                 //   pl_y <= pl_y + 2;
+                //if ((up_key_1) && (pl_y > 0)&&(((pl_x>=R_BOUND)||(pl_x+SPRITE_SIZE<=L_BOUND))&&((pl_x>=R_BOUND1)||(pl_x+SPRITE_SIZE<=L_BOUND1))))
+                  //  pl_y <= pl_y - 1; 
+                  if ((up_key_2) && (pl_y > 1) )  
+                  pl_y <= pl_y - 2;
+                  
+                  
+                  
+                 
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                     end
                    
                      else if(pl_x>450)
@@ -390,13 +459,13 @@ begin
                     pl_y <= pl_y - 1;    
                      end
                     
-                 else
+                 else if((pl_y>150))
                  begin
                    if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(((pl_x + SPRITE_SIZE<L_BOUND5)&(pl_y +SPRITE_SIZE> U_BOUND5) & (pl_y <D_BOUND5))||(pl_x > (R_BOUND5-2))))
                     pl_x <= pl_x + 1;
                 if ((left_key_1) && (pl_x > 0)&&(((pl_x >R_BOUND5)&(pl_y +SPRITE_SIZE > U_BOUND5 )& (pl_y <D_BOUND5))||(pl_x-SPRITE_SIZE < L_BOUND5)))
                     pl_x <= pl_x - 1;      
-                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_y+SPRITE_SIZE<(U_BOUND5+2))&(pl_x<R_BOUND5)&(pl_x +SPRITE_SIZE>L_BOUND5))||(pl_y >( D_BOUND5-21))))
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_y+SPRITE_SIZE<(U_BOUND5+2))&(pl_x<R_BOUND5)&(pl_x +SPRITE_SIZE>L_BOUND5))||(pl_y >( D_BOUND5-3))))
                     pl_y <= pl_y + 1;
                 if ((up_key_1) && (pl_y > 0)&&(((pl_y > D_BOUND5)&(pl_x<R_BOUND5)&(pl_x+SPRITE_SIZE>L_BOUND5))||(pl_y + SPRITE_SIZE < (U_BOUND5+4))))
                     pl_y <= pl_y - 1;    
@@ -411,10 +480,34 @@ begin
                 if ((up_key_1) && (pl_y > 0)&&((pl_x>=R_BOUND5)||(pl_x+SPRITE_SIZE<=L_BOUND5)))
                     pl_y <= pl_y - 1;   
                  end   
-                    
+                 else
+                                     begin
+                   if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(((pl_x + SPRITE_SIZE<L_BOUND4)&(pl_y +SPRITE_SIZE> U_BOUND4) & (pl_y <D_BOUND4))||(pl_x > (R_BOUND4-2))))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&(((pl_x >R_BOUND4)&(pl_y +SPRITE_SIZE > U_BOUND4 )& (pl_y <D_BOUND4))||(pl_x-SPRITE_SIZE < L_BOUND4)))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_y+SPRITE_SIZE<(U_BOUND4+2))&(pl_x<R_BOUND4)&(pl_x +SPRITE_SIZE>L_BOUND4))||(pl_y >( D_BOUND4-3))))
+                    pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&(((pl_y > D_BOUND4)&(pl_x<R_BOUND4)&(pl_x+SPRITE_SIZE>L_BOUND4))||(pl_y + SPRITE_SIZE < (U_BOUND4+4))))
+                    pl_y <= pl_y - 1;    
+                 
+                 
+                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((pl_y +SPRITE_SIZE <= (U_BOUND4+2)) ||( pl_y >D_BOUND4-2)))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&((pl_y +SPRITE_SIZE <= U_BOUND4 )|| (pl_y >=D_BOUND4)))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&((pl_x>=R_BOUND4)||(pl_x +SPRITE_SIZE<=L_BOUND4)))
+                    pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&((pl_x>=R_BOUND4)||(pl_x+SPRITE_SIZE<=L_BOUND4)))
+                    pl_y <= pl_y - 1;   
+                 end   
  end                   
-                    
-                    
+ end                   
+    if ((pl_y > 300)&&(pl_x>520))
+        gameend = 1;
+        else
+        gameend = 0;
+ 
                     
                     
                     
@@ -469,16 +562,25 @@ begin
         assign dig6 = x_out[8:8];
         assign dig7 = x_out[9:9];
 
+seginterface M1 (.clk(CLK),.dig7(gameend),.dig6(0),.dig5(0),.dig4(0),.dig3(0),.dig2(0),.dig1(0),.dig0(0),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.an(an));
 
-   seginterface M1 (.clk(CLK),.dig7(digital6),.dig6(digital5),.dig5(digital4),.dig4(digital3),.dig3(digital2),.dig2(digital1),.dig1(digital0),.dig0(0),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.an(an));
-assign left_key_1 = ((x_out<200))? 1:0;
-    assign right_key_1 = ((x_out>300))? 1:0;
-    assign down_key_1 = ((y_out<200))? 1:0;
-    assign up_key_1 = (y_out>300)? 1:0;
-   // assign left_key_1 = ((x_out>160)&(x_out<200))? 1:0;
-   // assign right_key_1 = ((340 > x_out)&(x_out>300))? 1:0;
-   // assign up_key_1 = ((y_out>160)&(y_out<200))? 1:0;
-   // assign down_key_1 = ((340 > y_out)&(y_out>300))? 1:0;
+
+
+//   seginterface M1 (.clk(CLK),.dig7(digital6),.dig6(digital5),.dig5(digital4),.dig4(digital3),.dig3(digital2),.dig2(digital1),.dig1(digital0),.dig0(0),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.an(an));
+//assign left_key_1 = ((x_out<200))? 1:0;
+//    assign right_key_1 = ((x_out>300))? 1:0;
+//    assign down_key_1 = ((y_out<200))? 1:0;
+//    assign up_key_1 = (y_out>300)? 1:0;
+    assign left_key_1 = ((x_out>160)&(x_out<200))? 1:0;
+    assign right_key_1 = ((340 > x_out)&(x_out>300))? 1:0;
+    assign down_key_1 = ((y_out>160)&(y_out<200))? 1:0;
+    assign up_key_1 = ((340 > y_out)&(y_out>300))? 1:0;
+    
+    
+    assign left_key_2 = (x_out<161)?1:0;
+    assign right_key_2 = (x_out >339)?1:0;
+    assign down_key_2 = (y_out<161)?1:0;
+    assign up_key_2 = (y_out > 339)?1:0;
    //   assign left_key_2 = (x_out<161)? 1:0;
     //assign right_key_2 = (339 < x_out)? 1:0;
     //assign up_key_2 = (y_out<161)? 1:0;
@@ -691,6 +793,36 @@ sq3_a1 <= sq3_a;
 end
 
 
+
+
+wire [11:0] sq4_b;
+wire [11:0] sq4_a;
+
+wire [11:0] sq4_b;
+reg [11:0] sq4_b1;
+always @(posedge CLK)
+begin
+sq4_b1 <= sq4_b;
+end
+assign sq4_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign sq4_a = (wall_b4 == 1)?(digital6 ? 12'hf00:12'h0f0):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_b4 = ((x < R_BOUND4) & (x > L_BOUND4) & (y > U_BOUND4) & (y < D_BOUND4))? 1:0;
+ wire [11:0] sq4_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] sq4_a1;
+always @(posedge CLK)
+begin
+sq4_a1 <= sq4_a;
+end
+
+
+
+
+
 wire [11:0] sq5_b;
 wire [11:0] sq5_a;
 
@@ -718,14 +850,53 @@ end
 
 
 
+wire [11:0] end_b;
+wire [11:0] end_a;
+
+wire [11:0] end_b;
+reg [11:0] end_b1;
+always @(posedge CLK)
+begin
+end_b1 <= end_b;
+end
+assign end_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign end_a = (wall_end == 1)?(digital6 ? 12'hff0:12'h0ff):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_end = (((x < 50) & (x > 30) & (y > 50) & (y < 200))||((x>49)&(x<90)&(y>50)&(y<70))||((x>49)&(x<90)&(y>115)&(y<135))||((x>49)&(x<90)&(y>180)&(y<200))||((x>120)&(x<140)&(y>50)&(y<200))||((x<180)&(x>139)&(y>50)&(y<70))||((x>179)&(x<200)&(y>50)&(y<200))||((x>230)&(x<260)&(y>115)&(y<200))||((x>259)&(x<280)&(y>50)&(y<200)))? 1:0;
+ wire [11:0] end_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] end_a1;
+always @(posedge CLK)
+begin
+end_a1 <= end_a;
+end
+
+
+
+
+
 //assign sq_a = (wall_b == 1)?12'hf00:12'h000;
 
 always @(posedge CLK)
 begin
-VGA_R[3:0] <= (sq_a1[11:8]+sq1_a1[11:8]+sq2_a1[11:8]+sq3_a1[11:8]+sq5_a1[11:8]+colour[11:8])/2;
-VGA_G[3:0] <= (sq_a1[7:4]+sq1_a1[7:4]+sq2_a1[7:4]+sq3_a1[7:4]+sq5_a1[7:4]+colour[7:4])/2;
-VGA_B[3:0] <= (sq_a1[3:0]+sq1_a1[3:0]+sq2_a1[3:0]+sq3_a1[3:0]+sq5_a1[3:0]+colour[3:0])/2;
+if (gameend ==0)
+begin
+VGA_R[3:0] <= (sq_a1[11:8]+sq1_a1[11:8]+sq2_a1[11:8]+sq3_a1[11:8]+sq5_a1[11:8]+sq5_a1[11:8]+colour[11:8])/2;
+VGA_G[3:0] <= (sq_a1[7:4]+sq1_a1[7:4]+sq2_a1[7:4]+sq3_a1[7:4]+sq4_a1[7:4]+sq5_a1[7:4]+colour[7:4])/2;
+VGA_B[3:0] <= (sq_a1[3:0]+sq1_a1[3:0]+sq2_a1[3:0]+sq3_a1[3:0]+sq4_a1[3:0]+sq5_a1[3:0]+colour[3:0])/2;
 end
+else if (gameend == 1)
+begin
+VGA_R[3:0] <= (colour[11:8]+end_a1[11:8])/2;
+VGA_G[3:0] <= (colour[7:4]+end_a1[7:4])/2;
+VGA_B[3:0] <= (colour[3:0]+end_a1[3:0])/2;
+end
+end
+
+          //assign screenend = screenend1;   
 
        // VGA_R <= colour[11:8];
       //  VGA_G <= colour[7:4];

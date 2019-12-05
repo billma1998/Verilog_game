@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Dec  5 06:19:10 2019
-# Process ID: 12988
+# Start of session at: Thu Dec  5 17:59:06 2019
+# Process ID: 844
 # Current directory: H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/top.vds
@@ -24,34 +24,46 @@ Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8564 
-WARNING: [Synth 8-992] sq_a is already implicitly declared earlier [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:602]
-WARNING: [Synth 8-976] sq1_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:615]
-WARNING: [Synth 8-2654] second declaration of sq1_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:615]
-INFO: [Synth 8-994] sq1_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:612]
-WARNING: [Synth 8-976] sq1_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:628]
-WARNING: [Synth 8-2654] second declaration of sq1_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:628]
-INFO: [Synth 8-994] sq1_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:613]
-WARNING: [Synth 8-976] sq2_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:644]
-WARNING: [Synth 8-2654] second declaration of sq2_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:644]
-INFO: [Synth 8-994] sq2_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:641]
-WARNING: [Synth 8-976] sq2_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:657]
-WARNING: [Synth 8-2654] second declaration of sq2_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:657]
-INFO: [Synth 8-994] sq2_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:642]
-WARNING: [Synth 8-976] sq3_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:672]
-WARNING: [Synth 8-2654] second declaration of sq3_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:672]
-INFO: [Synth 8-994] sq3_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:669]
-WARNING: [Synth 8-976] sq3_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:685]
-WARNING: [Synth 8-2654] second declaration of sq3_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:685]
-INFO: [Synth 8-994] sq3_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:670]
-WARNING: [Synth 8-976] sq5_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:697]
-WARNING: [Synth 8-2654] second declaration of sq5_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:697]
-INFO: [Synth 8-994] sq5_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:694]
-WARNING: [Synth 8-976] sq5_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:710]
-WARNING: [Synth 8-2654] second declaration of sq5_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:710]
-INFO: [Synth 8-994] sq5_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:695]
+INFO: Helper process launched with PID 2932 
+WARNING: [Synth 8-992] sq_a is already implicitly declared earlier [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:704]
+WARNING: [Synth 8-976] sq1_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:717]
+WARNING: [Synth 8-2654] second declaration of sq1_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:717]
+INFO: [Synth 8-994] sq1_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:714]
+WARNING: [Synth 8-976] sq1_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:730]
+WARNING: [Synth 8-2654] second declaration of sq1_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:730]
+INFO: [Synth 8-994] sq1_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:715]
+WARNING: [Synth 8-976] sq2_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:746]
+WARNING: [Synth 8-2654] second declaration of sq2_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:746]
+INFO: [Synth 8-994] sq2_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:743]
+WARNING: [Synth 8-976] sq2_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:759]
+WARNING: [Synth 8-2654] second declaration of sq2_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:759]
+INFO: [Synth 8-994] sq2_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:744]
+WARNING: [Synth 8-976] sq3_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:774]
+WARNING: [Synth 8-2654] second declaration of sq3_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:774]
+INFO: [Synth 8-994] sq3_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:771]
+WARNING: [Synth 8-976] sq3_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:787]
+WARNING: [Synth 8-2654] second declaration of sq3_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:787]
+INFO: [Synth 8-994] sq3_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:772]
+WARNING: [Synth 8-976] sq4_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:801]
+WARNING: [Synth 8-2654] second declaration of sq4_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:801]
+INFO: [Synth 8-994] sq4_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:798]
+WARNING: [Synth 8-976] sq4_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:814]
+WARNING: [Synth 8-2654] second declaration of sq4_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:814]
+INFO: [Synth 8-994] sq4_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:799]
+WARNING: [Synth 8-976] sq5_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:829]
+WARNING: [Synth 8-2654] second declaration of sq5_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:829]
+INFO: [Synth 8-994] sq5_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:826]
+WARNING: [Synth 8-976] sq5_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:842]
+WARNING: [Synth 8-2654] second declaration of sq5_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:842]
+INFO: [Synth 8-994] sq5_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:827]
+WARNING: [Synth 8-976] end_b has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:856]
+WARNING: [Synth 8-2654] second declaration of end_b ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:856]
+INFO: [Synth 8-994] end_b is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:853]
+WARNING: [Synth 8-976] end_a has already been declared [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:869]
+WARNING: [Synth 8-2654] second declaration of end_a ignored [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:869]
+INFO: [Synth 8-994] end_a is declared here [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:854]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.953 ; gain = 112.242
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 418.223 ; gain = 111.758
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:22]
 	Parameter U_BOUND bound to: 9'b000110010 
@@ -70,6 +82,10 @@ INFO: [Synth 8-6157] synthesizing module 'top' [H:/Documents/GitHub/12.4/Verilog
 	Parameter D_BOUND3 bound to: 9'b101000000 
 	Parameter L_BOUND3 bound to: 10'b1000011100 
 	Parameter R_BOUND3 bound to: 10'b1000110000 
+	Parameter U_BOUND4 bound to: 9'b000110010 
+	Parameter D_BOUND4 bound to: 9'b001100100 
+	Parameter L_BOUND4 bound to: 10'b0100000100 
+	Parameter R_BOUND4 bound to: 10'b0101001010 
 	Parameter U_BOUND5 bound to: 9'b011001000 
 	Parameter D_BOUND5 bound to: 9'b100101100 
 	Parameter L_BOUND5 bound to: 10'b0011110000 
@@ -90,7 +106,7 @@ INFO: [Synth 8-6157] synthesizing module 'top' [H:/Documents/GitHub/12.4/Verilog
 	Parameter SPRITE_PL_OFFSET bound to: 0 - type: integer 
 	Parameter SPRITE_PL_X bound to: 20 - type: integer 
 	Parameter SPRITE_PL_Y bound to: 10 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'sprites_palette.mem' is read successfully [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:188]
+INFO: [Synth 8-3876] $readmem data file 'sprites_palette.mem' is read successfully [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:197]
 INFO: [Synth 8-6157] synthesizing module 'vga640x480' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/vga640x480.v:23]
 	Parameter HS_STA bound to: 16 - type: integer 
 	Parameter HS_END bound to: 112 - type: integer 
@@ -115,17 +131,20 @@ INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [H:/Documents/Gi
 	Parameter MEMFILE bound to: sprites.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'sprites.mem' is read successfully [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/sram.v:37]
 INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (2#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/sram.v:23]
-WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:356]
-WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:384]
-WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:386]
+WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:366]
+WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:405]
+WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:411]
+WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:413]
+WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:453]
+WARNING: [Synth 8-6090] variable 'pl_x' is written by both blocking and non-blocking assignments, entire logic could be removed [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:455]
 INFO: [Synth 8-6157] synthesizing module 'seginterface' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/seginterface.v:23]
 INFO: [Synth 8-6157] synthesizing module 'sevenseg' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (3#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'seginterface' (4#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/seginterface.v:23]
-WARNING: [Synth 8-350] instance 'M1' of module 'seginterface' requires 19 connections, but only 17 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:473]
-INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-12988-F211-10/realtime/xadc_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (5#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-12988-F211-10/realtime/xadc_wiz_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 23 connections, but only 22 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:499]
+WARNING: [Synth 8-350] instance 'M1' of module 'seginterface' requires 19 connections, but only 17 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:565]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-844-F210-17/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (5#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/.Xil/Vivado-844-F210-17/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'XLXI_7' of module 'xadc_wiz_0' requires 23 connections, but only 22 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:601]
 INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl2_2' [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
@@ -177,15 +196,23 @@ WARNING: [Synth 8-3848] Net m_axis_dout_tdata in module/entity AccelArithmetics 
 INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics' (8#1) [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelArithmetics.vhd:75]
 INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (9#1) [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/project_1.srcs/sources_1/new/AccelerometerCtl.vhd:70]
 INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl2_2' (10#1) [h:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/ip/AccelerometerCtl2_2/synth/AccelerometerCtl2_2.vhd:71]
-WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_X_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:585]
-WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_Y_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:585]
-WARNING: [Synth 8-350] instance 'acc' of module 'AccelerometerCtl2_2' requires 10 connections, but only 8 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:585]
-WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:530]
-WARNING: [Synth 8-6014] Unused sequential element sq_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:593]
-WARNING: [Synth 8-6014] Unused sequential element sq1_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:619]
-WARNING: [Synth 8-6014] Unused sequential element sq2_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:648]
-WARNING: [Synth 8-6014] Unused sequential element sq3_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:676]
-WARNING: [Synth 8-6014] Unused sequential element sq5_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:701]
+WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_X_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:687]
+WARNING: [Synth 8-689] width (14) of port connection 'ACCEL_Y_OUT' does not match port width (9) of module 'AccelerometerCtl2_2' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:687]
+WARNING: [Synth 8-350] instance 'acc' of module 'AccelerometerCtl2_2' requires 10 connections, but only 8 given [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:687]
+WARNING: [Synth 8-6014] Unused sequential element decimal_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:632]
+WARNING: [Synth 8-6014] Unused sequential element digital0_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:636]
+WARNING: [Synth 8-6014] Unused sequential element digital1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:637]
+WARNING: [Synth 8-6014] Unused sequential element digital2_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:638]
+WARNING: [Synth 8-6014] Unused sequential element digital3_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:639]
+WARNING: [Synth 8-6014] Unused sequential element digital4_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:640]
+WARNING: [Synth 8-6014] Unused sequential element digital5_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:641]
+WARNING: [Synth 8-6014] Unused sequential element sq_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:695]
+WARNING: [Synth 8-6014] Unused sequential element sq1_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:721]
+WARNING: [Synth 8-6014] Unused sequential element sq2_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:750]
+WARNING: [Synth 8-6014] Unused sequential element sq3_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:778]
+WARNING: [Synth 8-6014] Unused sequential element sq4_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:805]
+WARNING: [Synth 8-6014] Unused sequential element sq5_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:833]
+WARNING: [Synth 8-6014] Unused sequential element end_b1_reg was removed.  [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:860]
 WARNING: [Synth 8-3848] Net pwm in module/entity top does not have driver. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:35]
 WARNING: [Synth 8-3848] Net aud_on in module/entity top does not have driver. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:35]
 INFO: [Synth 8-6155] done synthesizing module 'top' (11#1) [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:22]
@@ -221,7 +248,7 @@ WARNING: [Synth 8-3331] design top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 493.586 ; gain = 186.875
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 492.586 ; gain = 186.121
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -234,10 +261,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 493.586 ; gain = 186.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 492.586 ; gain = 186.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 493.586 ; gain = 186.875
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 492.586 ; gain = 186.121
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -263,24 +290,24 @@ Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_
 Finished Parsing XDC File [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 829.563 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 831.535 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 829.563 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.535 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 829.563 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 829.563 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 831.535 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 831.535 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 829.563 ; gain = 522.852
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 831.535 ; gain = 525.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 829.563 ; gain = 522.852
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 831.535 ; gain = 525.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -289,7 +316,7 @@ Applied set_property DONT_TOUCH = true for acc/U0. (constraint file  H:/Document
 Applied set_property DONT_TOUCH = true for acc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for XLXI_7. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 829.563 ; gain = 522.852
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 831.535 ; gain = 525.070
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
 INFO: [Synth 8-5546] ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
@@ -324,6 +351,7 @@ INFO: [Synth 8-5544] ROM "Cmd_Reg[2]" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "Cnt_Bytes_Sent" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "RESET_INT" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "sq_a0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "end_a0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -370,7 +398,7 @@ stadxlwaitsampleratetick |                             0100 |                   
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 829.563 ; gain = 522.852
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 831.535 ; gain = 525.070
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -387,11 +415,12 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 4     
 	   2 Input     11 Bit       Adders := 5     
-	   2 Input     10 Bit       Adders := 13    
+	   2 Input     10 Bit       Adders := 16    
+	   3 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 2     
-	   6 Input      7 Bit       Adders := 3     
+	   7 Input      7 Bit       Adders := 3     
 	   2 Input      6 Bit       Adders := 2     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 2     
@@ -400,17 +429,17 @@ Detailed RTL Component Info :
 	               18 Bit    Registers := 4     
 	               16 Bit    Registers := 1     
 	               13 Bit    Registers := 3     
-	               12 Bit    Registers := 10    
+	               12 Bit    Registers := 12    
 	               10 Bit    Registers := 11    
 	                9 Bit    Registers := 3     
 	                8 Bit    Registers := 20    
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 11    
+	                4 Bit    Registers := 5     
 	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 9     
+	                1 Bit    Registers := 10    
 +---RAMs : 
 	            1800K Bit         RAMs := 2     
 	              64K Bit         RAMs := 1     
@@ -419,9 +448,10 @@ Detailed RTL Component Info :
 	   2 Input     18 Bit        Muxes := 6     
 	   2 Input     13 Bit        Muxes := 4     
 	   9 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 7     
-	   2 Input     10 Bit        Muxes := 35    
-	   5 Input     10 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input     10 Bit        Muxes := 31    
+	   5 Input     10 Bit        Muxes := 3     
 	   4 Input     10 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 3     
 	   4 Input      8 Bit        Muxes := 1     
@@ -431,7 +461,7 @@ Detailed RTL Component Info :
 	   8 Input      7 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
 	   9 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 8     
 	   7 Input      3 Bit        Muxes := 1     
@@ -441,9 +471,10 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 66    
 	   4 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 5     
 	   9 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -456,32 +487,39 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 5     
-	   2 Input     10 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 9     
+	   3 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 1     
-	   6 Input      7 Bit       Adders := 3     
+	   7 Input      7 Bit       Adders := 3     
 	   2 Input      6 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
 +---Registers : 
 	               18 Bit    Registers := 4     
 	               16 Bit    Registers := 1     
 	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 6     
+	               12 Bit    Registers := 8     
 	               10 Bit    Registers := 5     
 	                9 Bit    Registers := 3     
 	                8 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 10    
-	                1 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input     18 Bit        Muxes := 6     
 	   2 Input     13 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 7     
-	   2 Input     10 Bit        Muxes := 30    
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 8     
+	   2 Input     10 Bit        Muxes := 26    
+	   5 Input     10 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 38    
+	   5 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
 Module vga640x480 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -610,12 +648,14 @@ INFO: [Synth 8-5546] ROM "ADXL_Control/SPI_Interface/SCLK_2X_TICK" won't be mapp
 INFO: [Synth 8-5546] ROM "ADXL_Control/Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ADXL_Control/Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RESET_INT" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:217]
-INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:218]
-INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:218]
-INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:217]
-DSP Report: Generating DSP digital02, operation Mode is: (A:0x3d090)*B.
-DSP Report: operator digital02 is absorbed into DSP digital02.
+INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:226]
+INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:227]
+INFO: [Synth 8-4471] merging register 'draw_y_reg[8:0]' into 'draw_y_reg[8:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:227]
+INFO: [Synth 8-4471] merging register 'draw_x_reg[9:0]' into 'draw_x_reg[9:0]' [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:226]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sq4_a1_reg' and it is trimmed from '12' to '8' bits. [H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v:819]
+INFO: [Synth 8-5544] ROM "sq_a0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+DSP Report: Generating DSP digital68, operation Mode is: (A:0x3d090)*B.
+DSP Report: operator digital68 is absorbed into DSP digital68.
 DSP Report: Generating DSP address_fb10, operation Mode is: C'+(A:0x280)*B2.
 DSP Report: register draw_y_reg is absorbed into DSP address_fb10.
 DSP Report: register draw_x_reg is absorbed into DSP address_fb10.
@@ -672,34 +712,38 @@ INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__21' (
 INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__13' (FDE) to 'sram:/i_0/memory_array_reg_mux_sel__22'
 INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__5' (FDE) to 'sram:/i_0/memory_array_reg_mux_sel__6'
 INFO: [Synth 8-3886] merging instance 'sram:/i_0/memory_array_reg_mux_sel__22' (FDE) to 'sram:/i_0/memory_array_reg_mux_sel__14'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[0]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[0]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[0]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[1]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[1]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[1]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[2]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[2]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[2]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[3]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[3]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[3]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq_a1_reg[0]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[0]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq_a1_reg[1]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[1]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq_a1_reg[2]' (FD) to 'sq_a1_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[2]' (FD) to 'sq_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[0]' (FD) to 'end_a1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[1]' (FD) to 'end_a1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[2]' (FD) to 'end_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[0]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[1]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[2]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[3]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[0]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[0]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[1]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[1]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq_a1_reg[2]' (FD) to 'sq5_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[2]' (FD) to 'sq5_a1_reg[3]'
 INFO: [Synth 8-3886] merging instance 'sq_a1_reg[3]' (FD) to 'sq5_a1_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sq5_a1_reg[3] )
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[4]' (FD) to 'sq3_a1_reg[5]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[4]' (FD) to 'sq2_a1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[3]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[0]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[0]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[0]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[1]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[1]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[1]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[2]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[2]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[2]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[3]' (FD) to 'sq2_a1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[3]' (FD) to 'sq3_a1_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sq3_a1_reg[3] )
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[4]' (FD) to 'end_a1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[5]' (FD) to 'end_a1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[6]' (FD) to 'end_a1_reg[7]'
 INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[4]' (FD) to 'sq1_a1_reg[5]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[5]' (FD) to 'sq3_a1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[5]' (FD) to 'sq2_a1_reg[6]'
 INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[5]' (FD) to 'sq1_a1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[6]' (FD) to 'sq3_a1_reg[7]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[6]' (FD) to 'sq2_a1_reg[7]'
 INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[6]' (FD) to 'sq1_a1_reg[7]'
 INFO: [Synth 8-3886] merging instance 'sq_a1_reg[4]' (FD) to 'sq_a1_reg[5]'
 INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[4]' (FD) to 'sq5_a1_reg[5]'
@@ -707,32 +751,40 @@ INFO: [Synth 8-3886] merging instance 'sq_a1_reg[5]' (FD) to 'sq_a1_reg[6]'
 INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[5]' (FD) to 'sq5_a1_reg[6]'
 INFO: [Synth 8-3886] merging instance 'sq_a1_reg[6]' (FD) to 'sq_a1_reg[7]'
 INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[6]' (FD) to 'sq5_a1_reg[7]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[8]' (FD) to 'sq3_a1_reg[9]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[8]' (FD) to 'sq2_a1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[4]' (FD) to 'sq4_a1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[4]' (FD) to 'sq2_a1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[4]' (FD) to 'sq3_a1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[5]' (FD) to 'sq4_a1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[5]' (FD) to 'sq2_a1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[5]' (FD) to 'sq3_a1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sq4_a1_reg[6]' (FD) to 'sq4_a1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[6]' (FD) to 'sq2_a1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[6]' (FD) to 'sq3_a1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[8]' (FD) to 'end_a1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[9]' (FD) to 'end_a1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'end_a1_reg[10]' (FD) to 'end_a1_reg[11]'
 INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[8]' (FD) to 'sq1_a1_reg[9]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[9]' (FD) to 'sq3_a1_reg[10]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[9]' (FD) to 'sq2_a1_reg[10]'
 INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[9]' (FD) to 'sq1_a1_reg[10]'
-INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[10]' (FD) to 'sq3_a1_reg[11]'
-INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[10]' (FD) to 'sq2_a1_reg[11]'
 INFO: [Synth 8-3886] merging instance 'sq1_a1_reg[10]' (FD) to 'sq1_a1_reg[11]'
 INFO: [Synth 8-3886] merging instance 'sq_a1_reg[8]' (FD) to 'sq_a1_reg[9]'
-INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[8]' (FD) to 'sq5_a1_reg[9]'
 INFO: [Synth 8-3886] merging instance 'sq_a1_reg[9]' (FD) to 'sq_a1_reg[10]'
-INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[9]' (FD) to 'sq5_a1_reg[10]'
 INFO: [Synth 8-3886] merging instance 'sq_a1_reg[10]' (FD) to 'sq_a1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[8]' (FD) to 'sq5_a1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[8]' (FD) to 'sq2_a1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[8]' (FD) to 'sq3_a1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[9]' (FD) to 'sq5_a1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[9]' (FD) to 'sq2_a1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[9]' (FD) to 'sq3_a1_reg[10]'
 INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[10]' (FD) to 'sq5_a1_reg[11]'
-INFO: [Synth 8-3886] merging instance 'sq5_a1_reg[3]' (FD) to 'VGA_B_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VGA_B_reg[3] )
+INFO: [Synth 8-3886] merging instance 'sq2_a1_reg[10]' (FD) to 'sq2_a1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'sq3_a1_reg[10]' (FD) to 'sq3_a1_reg[11]'
 INFO: [Synth 8-3886] merging instance 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][0]' (FDRE) to 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][5]'
-INFO: [Synth 8-3886] merging instance 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][3]' (FDRE) to 'acc/U0/ADXL_Control/Cmd_Reg_reg[0][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (acc/U0/\ADXL_Control/Cmd_Reg_reg[0][5] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (acc/U0/\ADXL_Control/Cmd_Reg_reg[1][7] )
-INFO: [Synth 8-3886] merging instance 'address_s_reg[10]' (FDE) to 'address_s_reg[12]'
-INFO: [Synth 8-3886] merging instance 'digital6_reg[2]' (FDRE) to 'digital6_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\digital6_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\digital6_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 1062.883 ; gain = 756.172
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -851,13 +903,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 1062.883 ; gain = 756.172
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:56 . Memory (MB): peak = 1062.883 ; gain = 756.172
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:15 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -920,7 +972,7 @@ INFO: [Synth 8-6837] The timing for the instance vram_b/memory_array_reg_1_0 (im
 INFO: [Synth 8-6837] The timing for the instance vram_b/memory_array_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:58 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:16 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -940,10 +992,10 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net n_0_86 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_85 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_84 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net n_0_82 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_81 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_80 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_78 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[0] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[1] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[2] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
@@ -960,10 +1012,10 @@ INFO: [Synth 8-6064] Net address_b[12] is driving 64 big block pins (URAM, BRAM 
 INFO: [Synth 8-6064] Net address_b[13] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[14] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_b[15] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_70 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_69 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_68 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net n_0_66 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_65 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_64 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
-INFO: [Synth 8-6064] Net n_0_62 is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_a[0] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_a[1] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 INFO: [Synth 8-6064] Net address_a[2] is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
@@ -984,7 +1036,7 @@ INFO: [Synth 8-6064] Net address_a[15] is driving 64 big block pins (URAM, BRAM 
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:17 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -997,7 +1049,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:17 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1009,25 +1061,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:18 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:18 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1060,27 +1112,27 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |xadc_wiz_0 |     1|
 |2     |BUFG       |     1|
-|3     |CARRY4     |    44|
+|3     |CARRY4     |    47|
 |4     |DSP48E1    |     1|
 |5     |DSP48E1_1  |     1|
 |6     |DSP48E1_2  |     1|
 |7     |DSP48E1_3  |     1|
 |8     |DSP48E1_4  |     1|
-|9     |LUT1       |    47|
-|10    |LUT2       |   185|
-|11    |LUT3       |   218|
-|12    |LUT4       |   338|
-|13    |LUT5       |   167|
-|14    |LUT6       |   411|
-|15    |MUXF7      |    35|
-|16    |MUXF8      |     7|
+|9     |LUT1       |    52|
+|10    |LUT2       |   207|
+|11    |LUT3       |   198|
+|12    |LUT4       |   356|
+|13    |LUT5       |   230|
+|14    |LUT6       |   464|
+|15    |MUXF7      |    37|
+|16    |MUXF8      |     8|
 |17    |RAMB36E1   |    64|
 |18    |RAMB36E1_1 |    64|
 |19    |RAMB36E1_2 |     1|
 |20    |RAMB36E1_3 |     1|
 |21    |SRL16E     |     8|
-|22    |FDRE       |   782|
-|23    |FDSE       |     6|
+|22    |FDRE       |   766|
+|23    |FDSE       |     5|
 |24    |IBUF       |    13|
 |25    |OBUF       |    32|
 |26    |OBUFT      |     2|
@@ -1090,40 +1142,40 @@ Report Instance Areas:
 +------+------------------------+---------------------+------+
 |      |Instance                |Module               |Cells |
 +------+------------------------+---------------------+------+
-|1     |top                     |                     |  2457|
+|1     |top                     |                     |  2587|
 |2     |  acc                   |AccelerometerCtl2_2  |   645|
 |3     |    U0                  |AccelerometerCtl     |   645|
 |4     |      ADXL_Control      |ADXL362Ctrl          |   516|
 |5     |        SPI_Interface   |SPI_If               |    79|
 |6     |      Accel_Calculation |AccelArithmetics     |   105|
-|7     |  M1                    |seginterface         |    56|
-|8     |  display               |vga640x480           |   145|
+|7     |  M1                    |seginterface         |    38|
+|8     |  display               |vga640x480           |   260|
 |9     |  spritebuf             |sram__parameterized0 |     2|
-|10    |  vram_a                |sram                 |   174|
-|11    |  vram_b                |sram_0               |   171|
+|10    |  vram_a                |sram                 |   181|
+|11    |  vram_b                |sram_0               |   178|
 +------+------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1063.301 ; gain = 756.836
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1090.754 ; gain = 448.066
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:59 . Memory (MB): peak = 1090.754 ; gain = 784.043
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:05 . Memory (MB): peak = 1063.301 ; gain = 417.887
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:18 . Memory (MB): peak = 1063.301 ; gain = 756.836
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 221 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 227 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1063.301 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-339 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
+357 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:02 . Memory (MB): peak = 1090.754 ; gain = 795.520
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1090.754 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:21 . Memory (MB): peak = 1063.301 ; gain = 768.309
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1063.301 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 06:20:18 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 18:00:34 2019...
