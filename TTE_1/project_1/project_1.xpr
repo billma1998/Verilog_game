@@ -77,15 +77,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/FPGA-Racing-Game-master/PWM.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v"/>
-          <Attr Name="ImportTime" Val="1574960476"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/project_3/seginterface.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../GitHub/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/seginterface.v"/>
@@ -99,15 +90,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../GitHub/Verilog_game/Racing/Racing.srcs/sources_1/imports/project_3/sevenseg.v"/>
           <Attr Name="ImportTime" Val="1575312864"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/FPGA-Racing-Game-master/song1.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v"/>
-          <Attr Name="ImportTime" Val="1574960476"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -129,6 +111,26 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/top.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/FPGA-Racing-Game-master/PWM.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v"/>
+          <Attr Name="ImportTime" Val="1574960476"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/FPGA-Racing-Game-master/song1.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Racing/Racing.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v"/>
+          <Attr Name="ImportTime" Val="1574960476"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

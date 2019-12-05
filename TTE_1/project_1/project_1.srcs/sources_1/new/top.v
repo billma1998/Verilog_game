@@ -78,12 +78,31 @@ wire left_key, right_key, up_key,down_key;
    reg [3:0] digital5;
    reg [3:0] digital6;
 
-        localparam U_BOUND = 9'd120;
-       localparam D_BOUND = 9'd180;
-       localparam L_BOUND = 10'd120;
-        localparam R_BOUND = 10'd420;
+        localparam U_BOUND = 9'd50;
+       localparam D_BOUND = 9'd80;
+       localparam L_BOUND = 10'd0;
+        localparam R_BOUND = 10'd61;
 
+        localparam U_BOUND1 = 9'd50;
+       localparam D_BOUND1 = 9'd350;
+       localparam L_BOUND1 = 10'd60;
+        localparam R_BOUND1 = 10'd80;
+        
+        
+        localparam U_BOUND2 = 9'd299;
+       localparam D_BOUND2 = 9'd320;
+       localparam L_BOUND2 = 10'd559;
+        localparam R_BOUND2 = 10'd640;
+        
+        localparam U_BOUND3 = 9'd0;
+       localparam D_BOUND3 = 9'd320;
+       localparam L_BOUND3 = 10'd540;
+        localparam R_BOUND3 = 10'd560;
 
+        localparam U_BOUND5 = 9'd200;
+       localparam D_BOUND5 = 9'd300;
+       localparam L_BOUND5 = 10'd240;
+        localparam R_BOUND5 = 10'd360;
     vga640x480 display (
         .i_clk(CLK), 
         .i_pix_stb(pix_stb),
@@ -174,8 +193,10 @@ wire left_key, right_key, up_key,down_key;
     localparam SPRITE_PL_INDEX = 0;  // player sprite
     localparam SPRITE_BG_OFFSET = SPRITE_BG_INDEX * SPRITE_SIZE * SPRITE_SIZE;
     localparam SPRITE_PL_OFFSET = SPRITE_PL_INDEX * SPRITE_SIZE * SPRITE_SIZE;
-    localparam SPRITE_PL_X = SCREEN_WIDTH - SPRITE_SIZE >> 1; // centre
-    localparam SPRITE_PL_Y = SCREEN_HEIGHT - SPRITE_SIZE;     // bottom
+    localparam SPRITE_PL_X = 20;
+    localparam SPRITE_PL_Y = 10;
+   // localparam SPRITE_PL_X = SCREEN_WIDTH - SPRITE_SIZE >> 1; // centre
+   // localparam SPRITE_PL_Y = SCREEN_HEIGHT - SPRITE_SIZE;     // bottom
 
     reg [9:0] draw_x;
     reg [8:0] draw_y;
@@ -294,13 +315,13 @@ wire left_key, right_key, up_key,down_key;
       // localparam L_BOUND = 10'd120;
       //  localparam R_BOUND = 10'd420;
                 // update ship position based on switches
-                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((pl_x + SPRITE_SIZE<L_BOUND)&(pl_y +SPRITE_SIZE> U_BOUND) & (pl_y <D_BOUND)||(pl_x > R_BOUND)))
+         /*       if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(((pl_x + SPRITE_SIZE<L_BOUND)&(pl_y +SPRITE_SIZE> U_BOUND) & (pl_y <D_BOUND))||(pl_x > R_BOUND)))
                     pl_x <= pl_x + 1;
-                if ((left_key_1) && (pl_x > 0)&&((pl_x >R_BOUND)&(pl_y +SPRITE_SIZE > U_BOUND )& (pl_y <D_BOUND)||(pl_x-SPRITE_SIZE < L_BOUND)))
+                if ((left_key_1) && (pl_x > 0)&&(((pl_x >R_BOUND)&(pl_y +SPRITE_SIZE > U_BOUND )& (pl_y <D_BOUND))||(pl_x-SPRITE_SIZE < L_BOUND)))
                     pl_x <= pl_x - 1;      
-                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&((pl_y+SPRITE_SIZE<U_BOUND)&(pl_x<R_BOUND)&(pl_x +SPRITE_SIZE>L_BOUND)||(pl_y > D_BOUND)))
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_y+SPRITE_SIZE<U_BOUND)&(pl_x<R_BOUND)&(pl_x +SPRITE_SIZE>L_BOUND))||(pl_y > D_BOUND)))
                     pl_y <= pl_y + 1;
-                if ((up_key_1) && (pl_y > 0)&&((pl_y > D_BOUND)&(pl_x<R_BOUND)&(pl_x+SPRITE_SIZE>L_BOUND)||(pl_y + SPRITE_SIZE < U_BOUND)))
+                if ((up_key_1) && (pl_y > 0)&&(((pl_y > D_BOUND)&(pl_x<R_BOUND)&(pl_x+SPRITE_SIZE>L_BOUND))||(pl_y + SPRITE_SIZE < U_BOUND)))
                     pl_y <= pl_y - 1;    
                  
                  
@@ -313,6 +334,104 @@ wire left_key, right_key, up_key,down_key;
                 if ((up_key_1) && (pl_y > 0)&&((pl_x>=R_BOUND)||(pl_x+SPRITE_SIZE<=L_BOUND)))
                     pl_y <= pl_y - 1;    
                  
+*/
+
+if(pl_x <= 150)
+begin
+                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((((pl_x + SPRITE_SIZE<L_BOUND)&(pl_y +SPRITE_SIZE> U_BOUND) & (pl_y <D_BOUND))||(pl_x > R_BOUND))&&(((pl_x + SPRITE_SIZE<L_BOUND1)&(pl_y +SPRITE_SIZE> U_BOUND1) & (pl_y <D_BOUND1))||(pl_x > R_BOUND1))))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&((((pl_x >R_BOUND1+1)&(pl_y +SPRITE_SIZE > U_BOUND )& (pl_y <D_BOUND))||(pl_x-SPRITE_SIZE < L_BOUND))&&(((pl_x >R_BOUND1+1)&(pl_y +SPRITE_SIZE > U_BOUND1 )& (pl_y <D_BOUND1))||(pl_x-SPRITE_SIZE < L_BOUND1))))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&((((pl_y+SPRITE_SIZE<U_BOUND)&(pl_x<R_BOUND)&(pl_x +SPRITE_SIZE>L_BOUND))&&(pl_y > D_BOUND))||(((pl_y+SPRITE_SIZE<U_BOUND1)&(pl_x<R_BOUND1)&(pl_x +SPRITE_SIZE>L_BOUND1))||(pl_y > D_BOUND1))))
+                    pl_y <= pl_y + 1;
+               // if ((up_key_1) && (pl_y > 0)&&((((pl_y > D_BOUND)&(pl_x<R_BOUND)&(pl_x+SPRITE_SIZE>L_BOUND))||(pl_y + SPRITE_SIZE < U_BOUND))&&(((pl_y > D_BOUND1)&(pl_x<R_BOUND1)&(pl_x+SPRITE_SIZE>L_BOUND1))||(pl_y + SPRITE_SIZE < U_BOUND1))))
+                    //pl_y <= pl_y - 1;    
+                 
+                 
+                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(((pl_y +SPRITE_SIZE <= U_BOUND) || pl_y >D_BOUND)&&((pl_y +SPRITE_SIZE <= U_BOUND1) || pl_y >D_BOUND1)))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&(((pl_y +SPRITE_SIZE <= U_BOUND )|| (pl_y >=D_BOUND+1))&&((pl_y +SPRITE_SIZE <= U_BOUND1 )|| (pl_y >=D_BOUND1+1))))
+                    pl_x <= pl_x - 1;    
+                 if ((left_key_1)&&(pl_y+SPRITE_SIZE>U_BOUND)&&(pl_x > (R_BOUND1+2)))
+                     pl_x = pl_x -1;   
+                     
+                           
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_x>=R_BOUND)||(pl_x +SPRITE_SIZE<=L_BOUND))&&((pl_x>=R_BOUND1)||(pl_x +SPRITE_SIZE<=L_BOUND1))))
+                    pl_y <= pl_y + 1;
+                //if ((up_key_1) && (pl_y > 0)&&(((pl_x>=R_BOUND)||(pl_x+SPRITE_SIZE<=L_BOUND))&&((pl_x>=R_BOUND1)||(pl_x+SPRITE_SIZE<=L_BOUND1))))
+                  //  pl_y <= pl_y - 1; 
+                  if ((up_key_1) && (pl_y > 0) )  
+                  pl_y <= pl_y - 1;
+                    end
+                   
+                     else if(pl_x>450)
+                     begin
+               //      if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((((pl_x + SPRITE_SIZE<L_BOUND2)&(pl_y +SPRITE_SIZE> U_BOUND2) & (pl_y <D_BOUND2))||(pl_x > R_BOUND2))&&(((pl_x + SPRITE_SIZE<L_BOUND3)&(pl_y +SPRITE_SIZE> U_BOUND3) & (pl_y <D_BOUND3))||(pl_x > R_BOUND3))))
+               //     pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&((((pl_x >R_BOUND2)&(pl_y +SPRITE_SIZE > U_BOUND2 )& (pl_y <D_BOUND2))||(pl_x-SPRITE_SIZE < L_BOUND2))&&(((pl_x >R_BOUND3)&(pl_y +SPRITE_SIZE > U_BOUND3 )& (pl_y <D_BOUND3))||(pl_x-SPRITE_SIZE < L_BOUND3))))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE))
+                 pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&((((pl_y > D_BOUND2)&(pl_x<R_BOUND2)&(pl_x+SPRITE_SIZE>L_BOUND2))||(pl_y + SPRITE_SIZE < U_BOUND2))&&(((pl_y > D_BOUND3)&(pl_x<R_BOUND3)&(pl_x+SPRITE_SIZE>L_BOUND3))||(pl_y + SPRITE_SIZE < U_BOUND3))))
+                    pl_y <= pl_y - 1;    
+                 
+                 
+             //   if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(((pl_y +SPRITE_SIZE <= U_BOUND2) || pl_y >D_BOUND2)&&((pl_y +SPRITE_SIZE <= U_BOUND3) || pl_y >D_BOUND3)))
+              //      pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&(((pl_y +SPRITE_SIZE <= U_BOUND2 )|| (pl_y >=D_BOUND2))&&((pl_y +SPRITE_SIZE <= U_BOUND3 )|| (pl_y >=D_BOUND3))))
+                    pl_x <= pl_x - 1;    
+                 if ((right_key_1)&&(pl_y>U_BOUND3)&&((pl_x +SPRITE_SIZE)< (L_BOUND3-2)))
+                     pl_x = pl_x +1;  
+                  if((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(pl_y > D_BOUND3 +3)) 
+                  pl_x = pl_x +1;
+                    //  if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_x>=R_BOUND2)||(pl_x +SPRITE_SIZE<=L_BOUND2))&&((pl_x>=R_BOUND3)||(pl_x +SPRITE_SIZE<=L_BOUND3))))
+                    //pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&(((pl_x>=R_BOUND2)||(pl_x+SPRITE_SIZE<=L_BOUND2))&&((pl_x>=R_BOUND3)||(pl_x+SPRITE_SIZE<=L_BOUND3))))
+                    pl_y <= pl_y - 1;    
+                     end
+                    
+                 else
+                 begin
+                   if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&(((pl_x + SPRITE_SIZE<L_BOUND5)&(pl_y +SPRITE_SIZE> U_BOUND5) & (pl_y <D_BOUND5))||(pl_x > (R_BOUND5-2))))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&(((pl_x >R_BOUND5)&(pl_y +SPRITE_SIZE > U_BOUND5 )& (pl_y <D_BOUND5))||(pl_x-SPRITE_SIZE < L_BOUND5)))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&(((pl_y+SPRITE_SIZE<(U_BOUND5+2))&(pl_x<R_BOUND5)&(pl_x +SPRITE_SIZE>L_BOUND5))||(pl_y >( D_BOUND5-21))))
+                    pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&(((pl_y > D_BOUND5)&(pl_x<R_BOUND5)&(pl_x+SPRITE_SIZE>L_BOUND5))||(pl_y + SPRITE_SIZE < (U_BOUND5+4))))
+                    pl_y <= pl_y - 1;    
+                 
+                 
+                if ((right_key_1) && (pl_x < SCREEN_WIDTH - SPRITE_SIZE)&&((pl_y +SPRITE_SIZE <= (U_BOUND5+2)) ||( pl_y >D_BOUND5-2)))
+                    pl_x <= pl_x + 1;
+                if ((left_key_1) && (pl_x > 0)&&((pl_y +SPRITE_SIZE <= U_BOUND5 )|| (pl_y >=D_BOUND5)))
+                    pl_x <= pl_x - 1;      
+                if ((down_key_1) && (pl_y < SCREEN_HEIGHT - SPRITE_SIZE) &&((pl_x>=R_BOUND5)||(pl_x +SPRITE_SIZE<=L_BOUND5)))
+                    pl_y <= pl_y + 1;
+                if ((up_key_1) && (pl_y > 0)&&((pl_x>=R_BOUND5)||(pl_x+SPRITE_SIZE<=L_BOUND5)))
+                    pl_y <= pl_y - 1;   
+                 end   
+                    
+ end                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+             
+
+
+
+
+
+
+
+
+
 
                /* if (right_key_2 && pl_x < SCREEN_WIDTH -1 - SPRITE_SIZE)
                   pl_x <= pl_x + 2;
@@ -340,7 +459,7 @@ wire left_key, right_key, up_key,down_key;
         //VGA_B <= colour[3:0];
         
         
-    end
+
         assign dig0 = x_out[2:2];
     assign dig1 = x_out[3:3];
     assign dig2 = x_out[4:4];
@@ -465,7 +584,7 @@ assign down_key_3 =(y_out>379)?1:0;
   //  assign down_key = (y_out>14'b000100101100)? 1:0;
         AccelerometerCtl2_2 acc(.SYSCLK(CLK), .RESET(RST_BTN), .SCLK(sclk), .MOSI(mosi), .MISO(miso), .SS(ss), .ACCEL_X_OUT(x_out), .ACCEL_Y_OUT(y_out));
 //song1 mysong(clk, reset, pause, aud_on, pwm);
-song1 mysong(clk, reset,aud_on, pwm);
+//song1 mysong(clk, reset,aud_on, pwm);
 
 wire [11:0] sq_b;
 reg [11:0] sq_b1;
@@ -488,13 +607,124 @@ begin
 sq_a1 <= sq_a;
 end
 
+
+
+wire [11:0] sq1_b;
+wire [11:0] sq1_a;
+
+wire [11:0] sq1_b;
+reg [11:0] sq1_b1;
+always @(posedge CLK)
+begin
+sq1_b1 <= sq1_b;
+end
+assign sq1_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign sq1_a = (wall_b1 == 1)?(digital6 ? 12'hf00:12'h0f0):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_b1 = ((x < R_BOUND1) & (x > L_BOUND1) & (y > U_BOUND1) & (y < D_BOUND1))? 1:0;
+ wire [11:0] sq1_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] sq1_a1;
+always @(posedge CLK)
+begin
+sq1_a1 <= sq1_a;
+end
+
+
+
+
+
+
+wire [11:0] sq2_b;
+wire [11:0] sq2_a;
+
+wire [11:0] sq2_b;
+reg [11:0] sq2_b1;
+always @(posedge CLK)
+begin
+sq2_b1 <= sq2_b;
+end
+assign sq2_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign sq2_a = (wall_b2 == 1)?(digital6 ? 12'hf00:12'h0f0):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_b2 = ((x < R_BOUND2) & (x > L_BOUND2) & (y > U_BOUND2) & (y < D_BOUND2))? 1:0;
+ wire [11:0] sq2_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] sq2_a1;
+always @(posedge CLK)
+begin
+sq2_a1 <= sq2_a;
+end
+
+
+
+
+
+wire [11:0] sq3_b;
+wire [11:0] sq3_a;
+
+wire [11:0] sq3_b;
+reg [11:0] sq3_b1;
+always @(posedge CLK)
+begin
+sq3_b1 <= sq3_b;
+end
+assign sq3_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign sq3_a = (wall_b3 == 1)?(digital6 ? 12'hf00:12'h0f0):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_b3 = ((x < R_BOUND3) & (x > L_BOUND3) & (y > U_BOUND3) & (y < D_BOUND3))? 1:0;
+ wire [11:0] sq3_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] sq3_a1;
+always @(posedge CLK)
+begin
+sq3_a1 <= sq3_a;
+end
+
+
+wire [11:0] sq5_b;
+wire [11:0] sq5_a;
+
+wire [11:0] sq5_b;
+reg [11:0] sq5_b1;
+always @(posedge CLK)
+begin
+sq5_b1 <= sq5_b;
+end
+assign sq5_b = ((x>0)&(x<1000)&(y>=0)&(y<1000))?12'h266:0;
+
+
+assign sq5_a = (wall_b5 == 1)?(digital6 ? 12'hf00:12'h0f0):
+                            (digital6 ? 12'h000 : 12'h000);
+
+        assign wall_b5 = ((x < R_BOUND5) & (x > L_BOUND5) & (y > U_BOUND5) & (y < D_BOUND5))? 1:0;
+ wire [11:0] sq5_a;
+    //wall blockwall( CLK, x, y, wall_b); 
+    reg [11:0] sq5_a1;
+always @(posedge CLK)
+begin
+sq5_a1 <= sq5_a;
+end
+
+
+
+
 //assign sq_a = (wall_b == 1)?12'hf00:12'h000;
 
 always @(posedge CLK)
 begin
-VGA_R[3:0] <= (sq_a1[11:8]+colour[11:8])/2;
-VGA_G[3:0] <= (sq_a1[7:4]+colour[7:4])/2;
-VGA_B[3:0] <= (sq_a1[3:0]+colour[3:0])/2;
+VGA_R[3:0] <= (sq_a1[11:8]+sq1_a1[11:8]+sq2_a1[11:8]+sq3_a1[11:8]+sq5_a1[11:8]+colour[11:8])/2;
+VGA_G[3:0] <= (sq_a1[7:4]+sq1_a1[7:4]+sq2_a1[7:4]+sq3_a1[7:4]+sq5_a1[7:4]+colour[7:4])/2;
+VGA_B[3:0] <= (sq_a1[3:0]+sq1_a1[3:0]+sq2_a1[3:0]+sq3_a1[3:0]+sq5_a1[3:0]+colour[3:0])/2;
 end
 
        // VGA_R <= colour[11:8];

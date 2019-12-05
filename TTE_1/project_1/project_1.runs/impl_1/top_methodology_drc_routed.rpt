@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Dec  5 02:10:43 2019
+| Date         : Thu Dec  5 06:22:19 2019
 | Host         : F211-10 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,502 +23,21 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 231
-+-----------+----------+-----------------------------------------------------------+------------+
-| Rule      | Severity | Description                                               | Violations |
-+-----------+----------+-----------------------------------------------------------+------------+
-| SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 96         |
-| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal                | 58         |
-| SYNTH-11  | Warning  | DSP output not registered                                 | 2          |
-| SYNTH-13  | Warning  | combinational multiplier                                  | 2          |
-| SYNTH-14  | Warning  | DSP cannot absorb non-zero init register                  | 3          |
-| TIMING-16 | Warning  | Large setup violation                                     | 25         |
-| TIMING-17 | Warning  | Non-clocked sequential cell                               | 19         |
-| TIMING-18 | Warning  | Missing input or output delay                             | 26         |
-+-----------+----------+-----------------------------------------------------------+------------+
+             Violations found: 137
++-----------+----------+--------------------------------------------+------------+
+| Rule      | Severity | Description                                | Violations |
++-----------+----------+--------------------------------------------+------------+
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 61         |
+| SYNTH-11  | Warning  | DSP output not registered                  | 2          |
+| SYNTH-13  | Warning  | combinational multiplier                   | 2          |
+| SYNTH-14  | Warning  | DSP cannot absorb non-zero init register   | 2          |
+| TIMING-16 | Warning  | Large setup violation                      | 25         |
+| TIMING-17 | Warning  | Non-clocked sequential cell                | 19         |
+| TIMING-18 | Warning  | Missing input or output delay              | 26         |
++-----------+----------+--------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-SYNTH-5#1 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#2 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#3 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#4 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#5 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#6 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#7 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#8 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_0_255_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#9 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#10 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#11 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#12 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#13 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#14 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#15 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#16 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1024_1279_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#17 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#18 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#19 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#20 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#21 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#22 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#23 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#24 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1280_1535_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#25 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#26 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#27 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#28 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#29 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#30 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#31 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#32 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1536_1791_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#33 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#34 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#35 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#36 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#37 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#38 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#39 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#40 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_1792_2047_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#41 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#42 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#43 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#44 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#45 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#46 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#47 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#48 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_256_511_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#49 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#50 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#51 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#52 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#53 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#54 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#55 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#56 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_512_767_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#57 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#58 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#59 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#60 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#61 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#62 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#63 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#64 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7168_7423_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#65 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#66 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#67 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#68 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#69 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#70 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#71 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#72 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7424_7679_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#73 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#74 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#75 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#76 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#77 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#78 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#79 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#80 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7680_7935_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#81 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#82 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#83 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#84 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#85 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#86 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#87 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#88 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_768_1023_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#89 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#90 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#91 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_2_2 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#92 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_3_3 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#93 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_4_4 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#94 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_5_5 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#95 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_6_6 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
-SYNTH-5#96 Warning
-Mapped onto distributed RAM because of timing constraints  
-The instance spritebuf/memory_array_reg_7936_8191_7_7 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
-Related violations: <none>
-
 SYNTH-6#1 Warning
 Timing of a block RAM might be sub-optimal  
 The timing for the instance vram_a/memory_array_reg_1_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
@@ -571,37 +90,37 @@ Related violations: <none>
 
 SYNTH-6#11 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_3_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#12 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_3_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#13 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_3_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#14 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#15 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_3_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#16 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_3_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#17 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_a/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_a/memory_array_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#18 Warning
@@ -721,92 +240,107 @@ Related violations: <none>
 
 SYNTH-6#41 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#42 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#43 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#44 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_3_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#45 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_3_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#46 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#47 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#48 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#49 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#50 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#51 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#52 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#53 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_5_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#54 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_0, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#55 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#56 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#57 Warning
 Timing of a block RAM might be sub-optimal  
-The timing for the instance vram_b/memory_array_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+The timing for the instance vram_b/memory_array_reg_7_3, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-6#58 Warning
 Timing of a block RAM might be sub-optimal  
+The timing for the instance vram_b/memory_array_reg_7_4, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#59 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance vram_b/memory_array_reg_7_5, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#60 Warning
+Timing of a block RAM might be sub-optimal  
 The timing for the instance vram_b/memory_array_reg_7_6, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#61 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance vram_b/memory_array_reg_7_7, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
 Related violations: <none>
 
 SYNTH-11#1 Warning
@@ -831,142 +365,137 @@ Related violations: <none>
 
 SYNTH-14#1 Warning
 DSP cannot absorb non-zero init register  
-Register pl_y_reg[3] cannot be absorbed into DSP block due to its non-zero INIT value.
+Register pl_y_reg[1] cannot be absorbed into DSP block due to its non-zero INIT value.
 Related violations: <none>
 
 SYNTH-14#2 Warning
 DSP cannot absorb non-zero init register  
-Register pl_y_reg[6] cannot be absorbed into DSP block due to its non-zero INIT value.
-Related violations: <none>
-
-SYNTH-14#3 Warning
-DSP cannot absorb non-zero init register  
-Register pl_y_reg[8] cannot be absorbed into DSP block due to its non-zero INIT value.
+Register pl_y_reg[3] cannot be absorbed into DSP block due to its non-zero INIT value.
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -3.687 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.947 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -3.704 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.031 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -3.709 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.101 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -3.855 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.106 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital0_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -4.757 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.297 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -4.782 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.353 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -4.811 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.378 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -4.814 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.394 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -4.837 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.443 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -4.885 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.466 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -5.050 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.471 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -5.082 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.641 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -5.119 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.674 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -5.168 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital1_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.709 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -5.220 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.770 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -5.269 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.828 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital6_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -5.306 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital5_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.862 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -5.325 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.876 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -5.332 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.912 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -5.333 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.928 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -5.474 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.969 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -5.577 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -5.604 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.035 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -5.672 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.058 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital2_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -5.697 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital3_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.210 ns between XLXI_7/inst/DCLK (clocked by sys_clk_pin) and digital4_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-17#1 Warning

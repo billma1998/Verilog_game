@@ -35,10 +35,8 @@ read_mem {
   H:/Documents/GitHub/12.4/Verilog_game/TTE_1/sprites_palette.mem
 }
 read_verilog -library xil_defaultlib {
-  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/PWM.v
   H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/seginterface.v
   H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/project_3/sevenseg.v
-  H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/imports/FPGA-Racing-Game-master/song1.v
   H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/sram.v
   H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/vga640x480.v
   H:/Documents/GitHub/12.4/Verilog_game/TTE_1/project_1/project_1.srcs/sources_1/new/top.v

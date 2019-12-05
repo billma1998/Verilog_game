@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Dec  5 02:09:53 2019
+| Date         : Thu Dec  5 06:21:33 2019
 | Host         : F211-10 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,7 +23,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    39 |
+| Number of unique control sets                            |    41 |
 | Unused register locations in slices containing registers |   143 |
 +----------------------------------------------------------+-------+
 
@@ -36,12 +36,12 @@ Table of Contents
 +--------+--------------+
 |      1 |            1 |
 |      4 |            3 |
-|      5 |            2 |
-|      6 |            4 |
+|      5 |            4 |
+|      6 |            5 |
 |      7 |            1 |
 |      8 |            5 |
 |      9 |            4 |
-|     10 |            5 |
+|     10 |            4 |
 |     11 |            2 |
 |    16+ |           12 |
 +--------+--------------+
@@ -53,12 +53,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             128 |           51 |
+| No           | No                    | No                     |             122 |           51 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              71 |           21 |
-| Yes          | No                    | No                     |             382 |          149 |
+| No           | Yes                   | No                     |              81 |           26 |
+| Yes          | No                    | No                     |             364 |          172 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             204 |           82 |
+| Yes          | Yes                   | No                     |             210 |           91 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -71,42 +71,44 @@ Table of Contents
 |  CLK_IBUF_BUFG | display/v_count[9]_i_1_n_0                                  | display/v_count[6]_i_1_n_0                     |                1 |              1 |
 |  CLK_IBUF_BUFG | acc/U0/ADXL_Control/sel                                     | acc/U0/ADXL_Control/Reset_Cnt_Num_Reads        |                1 |              4 |
 |  CLK_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[0]_0                            | acc/U0/ADXL_Control/Cmd_Reg[0][6]_i_1_n_0      |                1 |              4 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | acc/U0/RESET_INT_reg_n_0                       |                3 |              4 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | acc/U0/RESET_INT_reg_n_0                       |                2 |              4 |
+|  CLK_IBUF_BUFG |                                                             | sq1_a1[7]_i_1_n_0                              |                2 |              5 |
+|  CLK_IBUF_BUFG |                                                             | sq_a00                                         |                2 |              5 |
 |  CLK_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[1][6]_i_2_n_0                   | acc/U0/ADXL_Control/Cmd_Reg[1]0_in[7]          |                2 |              5 |
 |  CLK_IBUF_BUFG | CEC                                                         | display/we_a                                   |                2 |              5 |
 |  CLK_IBUF_BUFG |                                                             | acc/U0/RESET_INT_reg_n_0                       |                3 |              6 |
-|  CLK_IBUF_BUFG |                                                             | acc/U0/ADXL_Control/SPI_Interface/SCLK_2X_DIV0 |                1 |              6 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[2]_1                            | acc/U0/ADXL_Control/Cmd_Reg[2][7]              |                1 |              6 |
+|  CLK_IBUF_BUFG |                                                             | acc/U0/ADXL_Control/SPI_Interface/SCLK_2X_DIV0 |                2 |              6 |
+|  CLK_IBUF_BUFG | display/pl_y_reg[7]                                         | display/RST_BTN                                |                5 |              6 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/Cmd_Reg[2]_1                            | acc/U0/ADXL_Control/Cmd_Reg[2][7]              |                2 |              6 |
 |  CLK_IBUF_BUFG | CEA2                                                        | display/we_a                                   |                3 |              6 |
 |  CLK_IBUF_BUFG | acc/U0/ADXL_Control/Shift_Cmd_Reg                           | acc/U0/RESET_INT_reg_n_0                       |                3 |              7 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                |                2 |              8 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                |                2 |              8 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/DONE_1_i_1_n_0            |                                                |                1 |              8 |
-|  CLK_IBUF_BUFG | datain_a                                                    |                                                |                5 |              8 |
-|  CLK_IBUF_BUFG | datain_b                                                    |                                                |                6 |              8 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/DONE_1_i_1_n_0            |                                                |                2 |              8 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                |                1 |              8 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                |                3 |              8 |
+|  CLK_IBUF_BUFG | datain_b                                                    |                                                |                5 |              8 |
+|  CLK_IBUF_BUFG | datain_a[7]_i_1_n_0                                         |                                                |                5 |              8 |
+|  CLK_IBUF_BUFG | display/v_count[9]_i_1_n_0                                  |                                                |                4 |              9 |
 |  CLK_IBUF_BUFG |                                                             | acc/U0/Accel_Calculation/ACCEL_X_CLIP[8]       |                3 |              9 |
 |  CLK_IBUF_BUFG |                                                             | acc/U0/Accel_Calculation/ACCEL_Y_CLIP[8]       |                3 |              9 |
-|  CLK_IBUF_BUFG | display/v_count[9]_i_1_n_0                                  |                                                |                4 |              9 |
-|  CLK_IBUF_BUFG | CEB2                                                        | display/we_a                                   |                3 |              9 |
-|  CLK_IBUF_BUFG | display/RST_BTN[0]                                          |                                                |                6 |             10 |
+|  CLK_IBUF_BUFG | CEB2                                                        | display/we_a                                   |                4 |              9 |
 |  CLK_IBUF_BUFG |                                                             | acc/U0/ADXL_Control/Cnt_SS_Inactive0           |                3 |             10 |
-|  CLK_IBUF_BUFG | display/E[0]                                                |                                                |                4 |             10 |
-|  CLK_IBUF_BUFG | draw_x[9]_i_2_n_0                                           | display/we_a                                   |                3 |             10 |
-|  CLK_IBUF_BUFG | pix_stb                                                     | display/h_count                                |                4 |             10 |
+|  CLK_IBUF_BUFG | display/E[0]                                                |                                                |                9 |             10 |
+|  CLK_IBUF_BUFG | draw_x[9]_i_2_n_0                                           | display/we_a                                   |                4 |             10 |
+|  CLK_IBUF_BUFG | pix_stb                                                     | display/h_count                                |                3 |             10 |
 |  CLK_IBUF_BUFG | pix_stb                                                     | display/SR[0]                                  |               10 |             11 |
 |  CLK_IBUF_BUFG |                                                             | RST_BTN_IBUF                                   |                3 |             11 |
-|  CLK_IBUF_BUFG | address_fb2                                                 | display/we_a                                   |                5 |             18 |
-|  M1/led_clk    |                                                             |                                                |                5 |             19 |
+|  CLK_IBUF_BUFG | address_fb2                                                 | display/we_a                                   |                6 |             18 |
+|  M1/led_clk    |                                                             |                                                |                6 |             19 |
 |  CLK_IBUF_BUFG |                                                             | acc/U0/ADXL_Control/Reset_Sample_Rate_Div      |                5 |             20 |
 |  CLK_IBUF_BUFG | acc/U0/ADXL_Control/E[0]                                    | acc/U0/RESET_INT_reg_n_0                       |                5 |             22 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/StC_Adxl_Ctrl[3]                        | acc/U0/RESET_INT_reg_n_0                       |                8 |             24 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/StC_Adxl_Ctrl[3]                        | acc/U0/RESET_INT_reg_n_0                       |               10 |             24 |
 |  CLK_IBUF_BUFG | digital6[1]_i_2_n_0                                         | digital0                                       |               19 |             26 |
+|  CLK_IBUF_BUFG | address_fb2                                                 |                                                |                9 |             29 |
 |  CLK_IBUF_BUFG | acc/U0/ADXL_Control/sel                                     | acc/U0/ADXL_Control/ACCEL_X_SUM0               |                8 |             32 |
-|  CLK_IBUF_BUFG | address_fb2                                                 |                                                |               11 |             37 |
-|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/Shift_Data_Reg            |                                                |               12 |             56 |
-|  CLK_IBUF_BUFG | address_a[17]_i_1_n_0                                       |                                                |               54 |            114 |
-|  CLK_IBUF_BUFG | address_b[17]_i_1_n_0                                       |                                                |               42 |            114 |
-|  CLK_IBUF_BUFG |                                                             |                                                |              142 |            493 |
+|  CLK_IBUF_BUFG | acc/U0/ADXL_Control/SPI_Interface/Shift_Data_Reg            |                                                |               10 |             56 |
+|  CLK_IBUF_BUFG |                                                             |                                                |               45 |            103 |
+|  CLK_IBUF_BUFG | address_a[17]_i_1_n_0                                       |                                                |               67 |            114 |
+|  CLK_IBUF_BUFG | address_b[17]_i_1_n_0                                       |                                                |               57 |            114 |
 +----------------+-------------------------------------------------------------+------------------------------------------------+------------------+----------------+
 
 
